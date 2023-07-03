@@ -1,0 +1,1948 @@
+--- !ruby/object:RPG::Map
+parallax_name: ''
+height: 20
+events:
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: EV002
+    x: 10
+    y: 14
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: '!_灯り'
+        character_index: 6
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: false
+      step_anime: true
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  6: !ruby/object:RPG::Event
+    id: 6
+    name: ダストン
+    x: 14
+    y: 11
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 286
+        switch2_id: 1
+        variable_id: 51
+        variable_value: 1
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: 男黒肌・私服1
+        character_index: 2
+        direction: 8
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 45, parameters: ['@auto_balloon =4']}
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: true
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [最初からいる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  7: !ruby/object:RPG::Event
+    id: 7
+    name: PC
+    x: 12
+    y: 10
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 58
+        variable_value: 3
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: $パソコンs血痕
+        character_index: 0
+        direction: 4
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: false
+      step_anime: false
+      direction_fix: true
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [最初からPCの表示。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  4: !ruby/object:RPG::Event
+    id: 4
+    name: EV004
+    x: 9
+    y: 4
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 子猫のお散歩(ほのぼの), volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 街15, volume: 85, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 日々是好日, volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 赤いドレスの女, volume: 60, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: Town2, volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: Town3, volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: Town5, volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [↑　自宅]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: Town6, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: はじめてのおつかい(コミカル), volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: キャラメル工房(街用), volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 村08, volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 街7, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 街18, volume: 90, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 街20, volume: 85, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 城・舞踏会, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 苺バニラ(ほのぼの), volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: c ダーク3(消失)170728_78bpm, volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: c ダーク5(妖しい呪い)170802_95bpm, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: c 探索13(人探し)171122_6-8_100bpm, volume: 70, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: c 探索15(セキュリティホール)180110_160bpm_3loop, volume: 65, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: c 日常24(青空スポット)170517_127bpm, volume: 70, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: c 街18(煉瓦の時計塔)170915_6-8_130bpm, volume: 60, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: c 街19(街の中央広場)170919_125bpm, volume: 70, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: c 街21(城下町の昼下がり)180514_6-8_95bpm_3loop, volume: 65, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: c 街22(正午のパレード)180611_4-4_112bpm, volume: 70, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: グレネードダイビング, volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: ダンジョン7(アジト), volume: 85, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 魔法の杖, volume: 65, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: comical4_そ～っと息を潜めて, volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: Scene10-vx, volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: Scene11-vx, volume: 95, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: Dungeon1, volume: 85, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: Dungeon2, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: comical3_幸せになれる壺, volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: comical5_疑心暗鬼, volume: 70, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: comical7_悪党の企み, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: comical9_のぞき穴, volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: H-BRUTE_FORCE_ATTACK, volume: 85, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: H-The_poison_acid_marmalade, volume: 85, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: H-タイムベンド, volume: 75, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: H-脳筋ルナティック, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: H-閉所恐怖症, volume: 70, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: H-バクテリア(テクノ), volume: 70, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: Flash2, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: Jump2, pitch: 100, volume: 90}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: Up4, pitch: 100, volume: 90}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: Up4, pitch: 100, volume: 90}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 249, p: [!ruby/object:RPG::ME {name: Shock, pitch: 100, volume: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: スコール(バトル), volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: ボス5, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: ボス7, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: ラスボス3, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 侵略(シリアス・敵系), volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 宇宙戦争, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: ボス7, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: 階段を落ちるビー玉, volume: 80, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: Battle4, volume: 90, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  12: !ruby/object:RPG::Event
+    id: 12
+    name: サイモン
+    x: 13
+    y: 11
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 412
+        switch2_id: 414
+        variable_id: 1
+        variable_value: 25
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: 男黒肌・私服2
+        character_index: 7
+        direction: 8
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 45, parameters: [' @auto_balloon = 1']}
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: true
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [最初からいる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: イベント４
+    x: 0
+    y: 0
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: true
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1331
+        switch2_id: 817
+        variable_id: 1
+        variable_value: 28
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 3
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ダストンイベント４。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ダストンたちにボテ腹初公開。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [フェードアウト中。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [ダストンイベント４の開始条件。　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [１・ダストンイベント３をクリア。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [２・シルフィーの初ボテ腹散歩開始以降。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [３・シルフィーがボテ腹状態でサイモンかダストンと会話する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [重要・この時シルフィーは初妊娠ではない可能性がある。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　この場合は胎盤収集が開始されている。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [A・エルフが妊娠しずらいという話　→OK]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [B・特別な妊娠薬で短期間で妊娠した　→OK]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [C・胎盤採集のために妊娠しまくっている　→進行状況による。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ここではＣはぼかしておく。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [理由があって妊娠したという話だけならなんとかOK。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [注・ガマスイベントで先に初ミルクを体験している可能性がある。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　(ガマスイベントが停止されていればこちらが初となる)]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　　↓]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　ぼやかした表現にしておく。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [注・エルフが妊娠し辛いという話について]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　ダストンは最初から知っているがサイモンはここで初めて知る。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '##EV用シルフィー40', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [フェードアウト中にシルフィーボテ腹立ち絵を]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ピクチャとして表示する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 213, p: [6, 6, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 213, p: [12, 6, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [二人にウェイトありフキダシ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [サイモンたちの立ち絵表示開始。どちらも左側。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ダストンの汗付き立ち絵はピクチャなので出し入れに注意。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [1]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 12
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: false
+          list:
+          - &1 !ruby/object:RPG::MoveCommand {code: 14, parameters: [0, 0]}
+          - &2 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Jump2, pitch: 100, volume: 80}]}
+          - &3 !ruby/object:RPG::MoveCommand {code: 14, parameters: [0, 0]}
+          - &4 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Jump2, pitch: 100, volume: 80}]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*3]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*4]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「どうみても臨月なんですけど!?」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [dis(2)]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [50, '##EV用ダストン6', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ダストン立ち絵ピクチャ表示。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [サイモンはスクリプトで消す。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [これを繰り返す。ダストンは以後ピクチャ移動の不透明度でオンオフ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「俺が処女をもらった時に受精したとしても早すぎるよな。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　それに先日会った時には何ともなかったし……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　それともエルフというのはそういうものなのか？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ここで最初のシルフィー立ち絵を消して]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [スクリプトでの表示に変更する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor1, 1, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「いえ、エルフも妊娠については変わりませんよ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　多少ちがう点もあるにはありますが」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「なにが違うって？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor1, 1, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ダストンさんには処女を買って頂いたときに話しましたけど……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [20]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーは事情を説明した。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [エルフは人間の種では極めて受精が難しいということ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして特別製の魔法の妊娠薬のことを。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [50]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ダストン立ち絵消去。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [次からは右側に立ち絵システムとして出す。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [20]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [20]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 12
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: false
+          list:
+          - &5 !ruby/object:RPG::MoveCommand {code: 14, parameters: [0, 0]}
+          - &6 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Jump2, pitch: 100, volume: 80}]}
+          - &7 !ruby/object:RPG::MoveCommand {code: 14, parameters: [0, 0]}
+          - &8 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Jump2, pitch: 100, volume: 80}]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*5]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*6]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*7]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「なんだよ!?　じゃあ今までの射精分は全部無駄打ちかよ!?']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　ダストンさんも教えてくれなかったし！」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 3, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「言わなかったっけ？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ここからダストンは右に表示。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor3, 6, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「妊娠する可能性はありますから無駄ではないと思いますけど。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　極端に確率が低いというだけで……]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　それに、気持ちよかったし\I[122]」']}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 12
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: false
+          list:
+          - &9 !ruby/object:RPG::MoveCommand {code: 14, parameters: [0, 0]}
+          - &10 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Jump2, pitch: 100, volume: 80}]}
+          - &11 !ruby/object:RPG::MoveCommand {code: 14, parameters: [0, 0]}
+          - &12 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Jump2, pitch: 100, volume: 80}]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*9]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*10]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*11]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*12]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あーもーっ!?　こんなにビッチに成長しちゃってっ！」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 3, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「その責任の一端はお前にもあるだろうが」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「なんかまたしても出し抜かれた感じっすね!?']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　どうしてくれようか……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「まあともかく、じっくりと見せてもらおうじゃないか。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　シルフィーの孕み腹をな」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [screen.clear_pictures]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '#胸愛撫5ボテ1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, '#胸愛撫5・困惑2', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [フェードアウト中にピクチャ表示。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: Dungeon1, volume: 85, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「あっ……あっ、あぁぁ……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「へへへ、揉みごこち最高\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　やっぱりオッパイ大きくなってるなぁ。さすが妊婦♪」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [背後からサイモンに乳房を揉み込まれていく。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [自分でも張っていると感じる膨らみをしごくように弄ばれて]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーはなんとなく次に起こることが予想できた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あっ\I[122]　あは……ミルク出ちゃう……かも\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「それを期待してるんだけどね♪]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　ダストンさん、ちゃんと撮ってくださいよ」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [80, '##カメラ視点2・480×640', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [80, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [決定的瞬間を捉えようとダストンがカメラを調整している。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, '#胸愛撫5・舌1', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [2, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [3, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [口変更。ゆっくり目に。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「ああんっ\I[122]　こんなところも記録されちゃうなんて\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [興奮に息をあえがせ、だらしなく舌を垂らした顔を晒しながら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その瞬間をシルフィーも待ち受けていた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「ハァ\I[122]　あはぁ\I[122]　気持ちいい……\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [乳房全体が熱くなっているようだった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [敏感な乳首を指先でつつまれ、潰され、転がされていくうちに]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [気分が高まってくる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「お、ちょっと先端が濡れてきた？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [4, '#胸愛撫5・口1', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [2, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [3, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あうううっ！　な、なんか来る!?　で、出ちゃううぅぅっ！」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [65]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [20, '#胸愛撫5母乳', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 80, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [' ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [SEは潮吹きと同じ。少しゆっくり目に表示。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーの悲鳴とともに暖かい飛沫が一気に溢れ出していた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「おめでとう♪]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　これでシルフィーもママになる準備完了ってわけだ♪」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [初産ではない可能性もあるがセリフ的には矛盾していない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [65]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [4, '#胸愛撫5・微笑み2', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [15, '#胸愛撫5・涙', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [3, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [4, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [15, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [口変更。涙追加。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「ああぁっ\I[122]　あはは……ミルクがこんなにいっぱい\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [少しとろみのある液体を肌で感じながら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーは涙をこぼしていた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [人間の男たちに陵辱されてそれを喜んで受け入れた結果、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [こんな身体にされてしまったという屈辱と悔恨の涙だった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [しかしその一方でシルフィーの胸は興奮で痛いほど高鳴り、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [快楽のあまり秘部から蜜を滴らせてしまってもいる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「いいね。妊婦にされてしまった戸惑いの涙。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　だがメスの本性は悦びに打ち震えているというわけだ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　ただの色狂いにはできない表情だ」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [こうしてダストンのコレクションに]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [またひとつお宝が増えたのだった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [screen.clear_pictures]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '#正常位1ボテ1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [5, '#正常位1男腕ボテ1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [15, '#正常位1・涙1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [フェードアウト中にピクチャ表示。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [62]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「オラッ！　この売女がっ！　オレたちに断りもせずに孕みやがって！」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「おおっ!　おおおっ！　オチンポ深いいぃぃぃっ!?」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「この重しが取れたらまた来るんだぞ!?']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　今度こそオレたちの種でガキを作ってやるからなっ！」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「あうううっ！　来るぅ、赤ちゃん作りに来ますからぁ！」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「よし、こいつは手付だ！　ありがたく受け取りやがれっ！」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「ゆ、ゆるしてっ!?　いやああぁぁぁっ！」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [64]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [30, '#正常位1・射精', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [30, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [赤ん坊がいる子宮めがけてサイモンのザーメンがほとばしる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, '#正常位1ボテ1-1', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [16, '#正常位1・涙2', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [1, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [15, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [2, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [16, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [身体と顔変更。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「お゛お゛お゛……あっ、あは\I[122]　赤ちゃんいるのに\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　また出されちゃったぁ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ねっとりした粘液が膣奥に広がっていくたまらない感触。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [肉棒がビクビクと震え、自分の浅ましい膣肉が意図しなくても]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [勝手に絡みついて慰めるように優しく搾りたてていく。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あはぁっ\I[122]　オチンポ気持ちよすぎるぅ～\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　こんなの止められるわけない\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [このお腹の赤ん坊を産んだ後もまたこうやって受精させられるのが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [メス豚にまで堕ちた自分の運命なのだとシルフィーはあらためて悟る。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして求められる限りこれからも人間のオスたちを]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [受け入れていこうと心に誓うのだった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [screen.clear_pictures]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: レジスター・開ける, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーはダストンから5000ゴールドのお手当てをもらった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 125, p: [0, 0, 5000]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 315, p: [0, 0, 0, 0, 7000, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [35, 35, 1, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [32, 32, 1, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [33, 33, 1, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [25, 25, 1, 0, 5]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [27, 27, 1, 0, 3]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [28, 28, 1, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [23, 23, 1, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [22, 22, 1, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [24, 24, 1, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [3, 3, 2, 0, 5]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [266, 266, 0, 0, 5]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [変数５。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [次のサブイベント説明を表示開始。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [1332, 1332, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [571, 571, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [イベント４終了判定スイッチと回想判定用スイッチ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [どこか別のところで回想４がオンになってしまったので]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [別のスイッチを使用する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 314, p: [0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 39, 28, 26, 8, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [商店前に移動する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [重要・妊娠できるようになるまで入れなくなる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 213, p: [-1, 6, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: Chime1, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 1, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストンたちと子作りをする約束をしてしまいました。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [妊娠できる状態になるまで会うことは出来ません。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [１・すでに胎盤収集が始まっているのなら家で休息して]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　出産を選択すれば可能。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [２・胎盤収集開始前ならば開始してから。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　ミッション２２/進行度３１。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ダストン商会入口に条件を設置する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 123, p: [A, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [自由行動開始。自動実行停止。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [回想用は繰り返し使うため停止させない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [胸愛撫７はイベント５か６、シルフィーを孕ませたときの記念撮影に。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [できればダストンが相手の時がいい。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: true
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 214, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  3: !ruby/object:RPG::Event
+    id: 3
+    name: 解説ダストンイベント４
+    x: 1
+    y: 0
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 18
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: '###表示用'
+        character_index: 0
+        direction: 4
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ダストンイベント４の開始条件。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [１・ダストンイベント３をクリア。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [２・シルフィーの初ボテ腹散歩開始以降。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [３・シルフィーがボテ腹状態でサイモンかダストンと会話する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [初めてシルフィーのボテ腹を見た反応となる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 1
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  8: !ruby/object:RPG::Event
+    id: 8
+    name: 解説ダストンイベント５
+    x: 2
+    y: 1
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 18
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: '###表示用'
+        character_index: 0
+        direction: 4
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ダストンイベント５の開始条件。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [１・ダストンイベント４をクリア。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [２・シルフィーが通常状態。　→ボテ腹だと店に入れない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [３・進行度３１以降/胎盤採集開始後。　→それまでは店に入れない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [条件が整った後にダストンかサイモンと話すことでこのマップに移動。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ダストンと子作りするイベント。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [注・娼婦服に着替えている可能性がある。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　途中でピクチャとしてシルフィー立ち絵を出す場面があるので]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　普段着/娼婦服を条件にしてイベントを分けておく。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [終了後は赤ん坊のベッドとメイドを表示する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 1
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  9: !ruby/object:RPG::Event
+    id: 9
+    name: イベント４
+    x: 0
+    y: 1
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: true
+        switch2_valid: true
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1332
+        switch2_id: 50
+        variable_id: 1
+        variable_value: 28
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 3
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ダストンイベント５開始。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [重要・シルフィー通常状態。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　胎盤採集が開始されている。　→子供を作りたい状態。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [注・娼婦服に着替えている可能性がある。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　途中でピクチャとしてシルフィー立ち絵を出す場面があるので]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　普段着/娼婦服を条件にしてイベントを分けておく。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　こちらは普段着の場合。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [566, 566, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [イベント５回想判定用スイッチ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「へへへ♪　俺たちを訪ねて来たってことは]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　覚悟はできてるんだろうな？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor5, 7, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「は、はい……\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [二人とは赤ちゃんを作るという約束をしている。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ボテ腹を散々もてあそばれて強制されたようなものだったが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いまは先生の依頼によって胎盤を集めることになっている。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [妊娠はシルフィーにとっても望むところだった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「さて、どうしてやりましょうかねぇダストンさん♪」]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 6
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: false
+          list:
+          - &13 !ruby/object:RPG::MoveCommand {code: 17, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*13]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「……そのまえに。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　お前、自分の子供ができたらその後はどうする気だ？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [注・ダストン立ち絵がシルフィーに代わって右側に登場。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　もちろんダストンのメッセージ位置は上になるので注意。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 12
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: false
+          list:
+          - &14 !ruby/object:RPG::MoveCommand {code: 18, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*14]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「へ？……そりゃまぁ、もちろん責任なんて取りませんよ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　目先の性欲に従って無責任に交尾してテキトーに女を孕ませるのが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　楽しいんじゃないですか♪」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「なら今日のところはお前の出番は無しだ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　シルフィーに俺の種で確実に妊娠してもらうためにな。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　産まれた赤ん坊はもちろん俺の子として育てる」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: ガーン, pitch: 100, volume: 85}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [dis(0)]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '##EV用シルフィー41', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン＆シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\{\{「えええっ!?」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [注・シルフィーはピクチャにしてサイモンと同時に表示する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　こちらは普段着の場合。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　ダストン立ち絵はスクリプトで消去。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「なにを驚いてる。当然だろう？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「そんな常識人みたいなセリフを……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「もちろんシルフィーに母親であることを強要するつもりはない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　俺の後継ぎを作るためにその子宮を貸してもらうだけで結構だ」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [50, '###右向きシルフィー困惑3', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「まえに説明したと思いますけど、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　特別製の妊娠薬で赤ちゃんを作ることはできますが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　エルフとしての性質は……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [注・左にサイモンの立ち絵を出しつつ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　シルフィーの立ち絵ピクチャを被せる。ピクチャ番号を12以上に。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　立ち絵スクリプトでサイモンの立ち絵を出していることに注意。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 234, p: [50, !ruby/object:Tone {r: -150.0, g: -150.0, b: -150.0, a: 0.0}, 5, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「聞いているが、どうかね？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　たしかに外見的な特徴は現れないかもしれんが血を引いてるのは]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　間違いない。影響が何もないとは俺としては信じられないね」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [サイモン立ち絵に合わせてシルフィー立ち絵も暗くする。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 234, p: [50, !ruby/object:Tone {r: 0.0, g: 0.0, b: 0.0, a: 0.0}, 5, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「赤ちゃんにエルフとしての長寿が授かるかもしれないとか、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　期待しないでくださいよ？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 234, p: [50, !ruby/object:Tone {r: -150.0, g: -150.0, b: -150.0, a: 0.0}, 5, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「それでもお前との子供なら上等な部類だよ」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 234, p: [50, !ruby/object:Tone {r: -150.0, g: -150.0, b: -150.0, a: 0.0}, 5, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [50]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [51, '###右向きシルフィー3', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [色調を戻しつつシルフィー立ち絵変更。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「…………」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [純粋に嬉しかった。ダストンには処女を買ってもらい]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [しかも気持ちよく女にしてもらったという]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [恩義めいたものを感じていたシルフィーである。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その男に母体として求められるのは]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [人間の男にかしずくことに至上の喜びを見出している]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [メス豚としても光栄なことだった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [加えて、元々生まれた赤ん坊は娼婦組合を介して]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [里子に出される段取りである。だがアレルタでも有数の]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン商会の後継ぎという未来が定まるのなら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [これから生まれてくる子供も幸せというものだろう。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [screen.clear_pictures]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [シルフィー立ち絵消去。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「チッ、いずれはダストンさんの養子になって]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　この商会をそっくり手に入れるというオレの野望が……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 3, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「いや、ねーから」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [screen.clear_pictures]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 223, p: [!ruby/object:Tone {r: -50.0, g: -50.0, b: 0.0, a: 34.0}, 5, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [夜間スイッチはいらない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [色調を変更。「夜」より少し明るめに。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [33]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [2250]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [シルフィーを首輪姿に変更。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [リードは左。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 95, 28, 25, 2, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [専用商店街マップに移動してイベント継続。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [重要・マップにダストンとサイモンのホコグラを最初から設置する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　　　↓]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　・移動時にはダストンを先頭にしてパーティー行動。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　・VIPルームと同じようにメニュー禁止。　→セーブポイント設置。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　・数か所をめぐってから種付け開始。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [重要・娼婦服と普段着の自動実行を両方同時消去する必要はない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　自動実行はそのままでいい。このマップは以後使わないから。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　回想は商店街マップに移動してからの内容にする。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [フェードインは移動してからの自動実行で。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: true
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 214, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  10: !ruby/object:RPG::Event
+    id: 10
+    name: イベント４
+    x: 1
+    y: 1
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: true
+        switch2_valid: true
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1332
+        switch2_id: 818
+        variable_id: 1
+        variable_value: 28
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 3
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ダストンイベント５開始。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [重要・シルフィー通常状態。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　胎盤採集が開始されている。　→子供作りたい状態。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [注・娼婦服に着替えている可能性がある。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　途中でピクチャとしてシルフィー立ち絵を出す場面があるので]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　普段着/娼婦服を条件にしてイベントを分けておく。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　こちらは娼婦服の場合。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [566, 566, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [イベント５回想判定用スイッチ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「へへへ♪　俺たちを訪ねて来たってことは]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　覚悟はできてるんだろうな？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor5, 7, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「は、はい……\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [二人とは赤ちゃんを作るという約束をしている。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ボテ腹を散々もてあそばれて強制されたようなものだったが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [いまは先生の依頼によって胎盤を集めることになっている。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [妊娠はシルフィーにとっても望むところだった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「さて、どうしてやりましょうかねぇダストンさん♪」]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 6
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: false
+          list:
+          - &15 !ruby/object:RPG::MoveCommand {code: 17, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*15]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「……そのまえに。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　お前、自分の子供ができたらその後はどうする気だ？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [注・ダストン立ち絵がシルフィーに代わって右側に登場。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　もちろんダストンのメッセージ位置は上になるので注意。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 12
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: false
+          list:
+          - &16 !ruby/object:RPG::MoveCommand {code: 18, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*16]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「へ？……そりゃまぁ、もちろん責任なんて取りませんよ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　目先の性欲に従って無責任に交尾してテキトーに女を孕ませるのが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　楽しいんじゃないですか♪」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「なら今日のところはお前の出番は無しだ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　シルフィーに俺の種で確実に妊娠してもらうためにな。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　産まれた赤ん坊はもちろん俺の子として育てる」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: ガーン, pitch: 100, volume: 85}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [dis(0)]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '##EV用シルフィー41-1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン＆シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\{\{「えええっ!?」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [注・シルフィーはピクチャにしてサイモンと同時に表示する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　こちらは普段着の場合。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　ダストン立ち絵はスクリプトで消去。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「なにを驚いてる。当然だろう？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「そんな常識人みたいなセリフを……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「もちろんシルフィーに母親であることを強要するつもりはない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　俺の後継ぎを作るためにその子宮を貸してもらうだけで結構だ」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [50, '###右向きシルフィー困惑3-1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「まえに説明したと思いますけど、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　特別製の妊娠薬で赤ちゃんを作ることはできますが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　エルフとしての性質は……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [注・左にサイモンの立ち絵を出しつつ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　シルフィーの立ち絵ピクチャを被せる。ピクチャ番号を12以上に。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　立ち絵スクリプトでサイモンの立ち絵を出していることに注意。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 234, p: [50, !ruby/object:Tone {r: -150.0, g: -150.0, b: -150.0, a: 0.0}, 5, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「聞いているが、どうかね？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　たしかに外見的な特徴は現れないかもしれんが血を引いてるのは]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　間違いない。影響が何もないとは俺としては信じられないね」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [サイモン立ち絵に合わせてシルフィー立ち絵も暗くする。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 234, p: [50, !ruby/object:Tone {r: 0.0, g: 0.0, b: 0.0, a: 0.0}, 5, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「赤ちゃんにエルフとしての長寿が授かるかもしれないとか、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　期待しないでくださいよ？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 234, p: [50, !ruby/object:Tone {r: -150.0, g: -150.0, b: -150.0, a: 0.0}, 5, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「それでもお前との子供なら上等な部類だよ」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 234, p: [50, !ruby/object:Tone {r: 0.0, g: 0.0, b: 0.0, a: 0.0}, 5, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 235, p: [50]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [51, '###右向きシルフィー3-1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [色調を戻しつつシルフィー立ち絵変更。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「…………」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [純粋に嬉しかった。ダストンには処女を買ってもらい]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [しかも気持ちよく女にしてもらったという]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [恩義めいたものを感じていたシルフィーである。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その男に母体として求められるのは]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [人間の男にかしずくことに至上の喜びを見出している]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [メス豚としても光栄なことだった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [加えて、元々生まれた赤ん坊は娼婦組合を介して]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [里子に出される段取りである。だがアレルタでも有数の]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン商会の後継ぎという未来が定まるのなら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [これから生まれてくる子供も幸せというものだろう。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [screen.clear_pictures]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [シルフィー立ち絵消去。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 2, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [サイモン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「チッ、いずれはダストンさんの養子になって]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　この商会をそっくり手に入れるというオレの野望が……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor31, 3, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダストン]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「いや、ねーから」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [screen.clear_pictures]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 223, p: [!ruby/object:Tone {r: -50.0, g: -50.0, b: 0.0, a: 34.0}, 5, true]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [夜間スイッチはいらない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [色調を変更。「夜」より少し明るめに。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [33]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [2250]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [シルフィーを首輪姿に変更。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [リードは左。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 95, 28, 25, 2, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [専用商店街マップに移動してイベント継続。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [重要・マップにダストンとサイモンのホコグラを最初から設置する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　　　↓]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　・移動時にはダストンを先頭にしてパーティー行動。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　・VIPルームと同じようにメニュー禁止。　→セーブポイント設置。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　・数か所をめぐってから種付け開始。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [重要・娼婦服と普段着の自動実行を両方同時消去する必要はない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　自動実行はそのままでいい。このマップは以後使わないから。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　回想は商店街マップに移動してからの内容にする。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [フェードインは移動してからの自動実行で。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: true
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 214, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  11: !ruby/object:RPG::Event
+    id: 11
+    name: EV011
+    x: 3
+    y: 1
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: '###表示用'
+        character_index: 0
+        direction: 4
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [イベント５？用アイデア。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [胎盤収集開始　→ボテ腹の反応が必要。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [野外露出徘徊/調教？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [首輪をすでに持っている。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [他の場所でも仕事をしているという話。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [シルヴィアを買ってしまえば？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [娼婦組合所属なのでそう簡単にはいかない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [シルヴィアの同意があれば？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [断わる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [むしゃくしゃして激しくセックス。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　↓]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [露出徘徊/調教イベントの出だしで？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [首輪を持っている　→VIPルーム初訪問後ということになる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  14: !ruby/object:RPG::Event
+    id: 14
+    name: EV014
+    x: 4
+    y: 1
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: '###表示用'
+        character_index: 0
+        direction: 4
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [重要・ダストンイベント５はミッション２２/胎盤採集中に起こせるので]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　このイベントの出産数もミッション２２クリアの条件として]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　使える。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [イベント終了後はフロルテ宅２にもどす。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [汎用出産イベントと同じで出産回数９で自動実行イベントが始まる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: true
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 1
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+parallax_sx: 0
+bgm: !ruby/object:RPG::BGM {name: c 街19(街の中央広場)170919_125bpm, volume: 70, pitch: 100}
+tileset_id: 142
+encounter_step: 30
+width: 25
+data: !ruby/object:Table
+  dim: 3
+  x: 25
+  y: 20
+  z: 4
+  data:
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a04 1a1c 1a1c 1a1c 1a1c 1a1c 1a1c 1a1c 1a1c 1a08 1a00 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a18 12e2 12e2 12e2 12e2 12e2 12e2 12e2 12e2 1a28 1a08 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a04 1a26 12e8 12e8 12e8 12e8 12e8 12e8 12e8 12e8 12ea 1a10 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a18 12e6 0d33 0d31 0d31 0d31 0d31 0d31 0d31 0d31 0d35 1a10 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a18 12ec 0d30 0e52 0e44 0e44 0e44 0e44 0e44 0e54 0d30 1a10 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a18 0d3b 0d2b 0e40 0e30 0e30 0e30 0e30 0e30 0e48 0d30 1a10 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a02 1a24 0d30 0e40 0e30 0e30 0e30 0e30 0e30 0e48 0d30 1a10 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a18 0d30 0e40 0e30 0e30 0e30 0e30 0e30 0e48 0d30 1a10 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a18 0d30 0e40 0e30 0e30 0e30 0e30 0e30 0e48 0d30 1a10 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a18 0d30 0e58 0e4c 0e4c 0e4c 0e4c 0e4c 0e56 0d30 1a10 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a18 0d39 0d31 0d31 0d31 0d31 0d31 0d31 0d31 0d37 1a10 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a02 1a14 1a14 1a14 1a14 1a14 1a14 1a14 1a14 1a14 1a01 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00
+  - 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00 1a00
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0305 0332 0333 028c 028d 0000 0354 0355 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 030d 033a 033b 0294 0295 0000 035c 035d 03d2 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 03da 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0210 0000 0000 0000 0000 03e2 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0210 0208 0210 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 03d1 0000 0000 0210 0000 026d 026e 0000 03d2 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 03d9 0000 0000 0000 0000 0275 0276 0000 03da 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 03e1 0000 0000 0000 0000 027d 027e 0000 03e2 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0205 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0200 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0200 0200 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0200 0000 0000 0000 0200 0200 0200 0200 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0200 0205 0200 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0200 0005 0000 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0200 0205 0200 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+bgs: !ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}
+parallax_loop_y: false
+autoplay_bgm: false
+encounter_list: []
+autoplay_bgs: false
+parallax_show: false
+scroll_type: 0
+parallax_loop_x: false
+disable_dashing: false
+parallax_sy: 0
+display_name: ''
+specify_battleback: false
+note: "イベント４用。\r\n通常時はマップ２を使う。\r\n　"
+battleback1_name: ''
+battleback2_name: ''

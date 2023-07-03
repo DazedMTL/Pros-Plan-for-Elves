@@ -1,0 +1,1063 @@
+--- !ruby/object:RPG::Map
+parallax_name: ''
+height: 20
+events:
+  48: !ruby/object:RPG::Event
+    id: 48
+    name: ストッパー
+    x: 22
+    y: 2
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: false
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  46: !ruby/object:RPG::Event
+    id: 46
+    name: 荷馬車・馬無し
+    x: 23
+    y: 2
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: $!荷馬車1
+        character_index: 0
+        direction: 6
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: false
+      step_anime: false
+      direction_fix: true
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  45: !ruby/object:RPG::Event
+    id: 45
+    name: 荷馬車・馬無し
+    x: 21
+    y: 2
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: $!荷馬車1
+        character_index: 0
+        direction: 6
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: false
+      step_anime: false
+      direction_fix: true
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  65: !ruby/object:RPG::Event
+    id: 65
+    name: 労働者
+    x: 23
+    y: 3
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: 男黒肌・私服2
+        character_index: 4
+        direction: 8
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: false
+      step_anime: true
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  73: !ruby/object:RPG::Event
+    id: 73
+    name: 船員
+    x: 17
+    y: 2
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 55
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: '#海の男1'
+        character_index: 7
+        direction: 4
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: false
+      step_anime: true
+      direction_fix: true
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: 回想・少年2(ルニオ)
+    x: 0
+    y: 0
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 38
+        switch2_id: 1
+        variable_id: 69
+        variable_value: 1
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 1
+        direction: 2
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 45, parameters: ['@auto_balloon =8']}
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: true
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 3
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [回想・少年たち2。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [回想部屋から移動してきて自動実行開始。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [33]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [1940]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [35]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [1961]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [イベント状況に合わせて立ち絵変更。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [BGMはマップのものを鳴らす。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 5, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [見覚えのある少年が船を眺めている。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [最初はルニオの立ち絵は無しで。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor1, 1, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「見つけた♪」]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 2
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: false
+          list:
+          - &1 !ruby/object:RPG::MoveCommand {code: 14, parameters: [0, 0]}
+          - &2 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Jump2, pitch: 100, volume: 90}]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 5, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「うわあっ!?」']}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 2
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &3 !ruby/object:RPG::MoveCommand {code: 19, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*3]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor21, 1, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「アネさんじゃないですか。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　驚かさないでくださいよ」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor1, 1, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ルニオくんを探してたの♪]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　あと、これからはシルフィーと呼んでくださいね」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor21, 1, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「はぁ……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [少年は不審そうにシルフィーを見やった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor21, 1, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「……なんだか、前とはずいぶん雰囲気が違いませんかアネ…]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　ではなくシルフィーさん？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor1, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「それはたぶんポンテくんのせいかな♪]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　すごく仲良しになっちゃったし……\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: ガーン, pitch: 100, volume: 85}]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 2
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &4 !ruby/object:RPG::MoveCommand {code: 14, parameters: [0, 0]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*4]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor21, 1, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\{「あ、あの野郎～!?」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor6, 3, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['(…ふふ～ん……なるほど\I[122])']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [互いに素早く事情を察する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor6, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「……それで、ルニオくんはどうしますかな？」]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - 2
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: false
+          list:
+          - &5 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Jump2, pitch: 100, volume: 80}]}
+          - &6 !ruby/object:RPG::MoveCommand {code: 14, parameters: [0, 0]}
+          - &7 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Jump2, pitch: 100, volume: 80}]}
+          - &8 !ruby/object:RPG::MoveCommand {code: 14, parameters: [0, 0]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*5]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*6]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*7]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*8]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor21, 1, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ま、待ってくださいシルフィーさん!]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　最初から、自分で言いますからっ!」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor1, 1, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「はい♪」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor21, 1, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ぼ、僕にシルフィーさんを買わせてくださいっ!　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　初めてだけど、シルフィーさんも満足できるように]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　頑張りますからっ!」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor1, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [(ポンテくんには引っ込み思案なように言われていたけど、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [' 言うべき時にはちゃんと決断できるじゃないの\I[122])']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 213, p: [-1, 4, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [了解の印に、シルフィーはその場でルニオに優しく口付けした。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 223, 18, 4, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [移動後の内容もここに置く。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '#upF1・体1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [5, '#upF1・困惑1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [10, '#upF1・テコキ包茎1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [11, '#upF1・汗', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [フェードアウト中にピクチャ表示。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: Dungeon1, volume: 85, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [(……あれ……なんだか…形が違う？)]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ズボンからまろび出たルニオのペニスを前にして]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーはめずらしく戸惑っていた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [(先端の形が……カリが無い…んじゃなくて、皮が被さっている？)]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「シ、シルフィーさん？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [6, '#upF1・閉じ目笑顔1', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [5, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [6, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あ、ごめんなさい。なんでもないから\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [笑ってごまかす。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [お客さまを不安がらせてはプロの娼婦失格である。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [7, '#upF1・笑顔1', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [6, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [7, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [(あ～…なるほどなるほど……たぶん未成熟なペニスって]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [' こうやって敏感な部分を皮で覆って隠してるんだな……♪)']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ためつすがめつしてようやく構造が理解できた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [今までは完全にズル剥けた大人のチンポばかりを相手にしてきたため]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [包茎ちんぽに遭遇したのはこれが初めてだったのだ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「あは……剥いちゃうね…」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [初めての体験にシルフィーの胸が高鳴る。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [新しい出来事にはいつも新鮮な興奮を覚えてしまう。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 08ストロークSE(長), pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [20, '#upF3-1・体1', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [21, '#upF3-1・閉じ目', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [40, '#upF3-1・少年チンポ', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [21, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [40, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [1, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [7, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [10, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [11, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [テコキを消去。フェラを表示。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ん……ちゅぷ…」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ぱくりとペニスを咥えこむとその先端を舌でまさぐっていく。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そして亀頭と皮の隙間にゆっくりと舌先を差し込むようにして]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [なぞっていった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [(んあ……ちょっとしょっぱい、かな…♪)]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [苦みとアンモニア臭も感じる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [だがシルフィーはそれを当然のこととして受け止め、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [唾液を絡めながら掃除をするようにゆっくりと舌を蠢かせていく。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「あぁっ、はぁぁう……シ、シルフィーさん…っ」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [普段は隠れている敏感な粘膜を熱く蕩けるような舌先で]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [チロチロと愛撫されてルニオが快楽にうめいた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [22, '#upF3-1・視線前1', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [21, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [22, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['(んふ……かわいい\I[122])']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 08ストロークSE(長), pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [少年の身体が激しい官能に震えるのを感じる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーはいっそう優しくチンポの掃除に没頭していった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [41, '#upF3-1・チンポ唾液', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [42, '#upF3-1・口元唾液', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [22, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [21, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [41, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [42, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [唾液表示。表情変更。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あむ……んぶっ、んん……ちゅるる\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [器用に舌を使って皮を剥くようにしゃぶり上げていく。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [付着していた汚れが美味しいわけはない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [だがシルフィーはこの行為が楽しくて仕方がなかった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [少年の前にひざまずいて排泄器官でもある]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ペニスの掃除をさせられるという惨めなシチュエーションが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーの倒錯した欲望を刺激していた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「う、ううぅ……っ!」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [43, '#upF3-1・口内射精', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [43, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [63]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [敏感な部分を執拗に舐めしゃぶられて]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ついにルニオが絶頂に導かれる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['(あはぁんっ\I[122]　ルニオくんの射精、すごい勢い\I[122])']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [舌の上にこってりとした濃厚ザーメンが吐き出されていく。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [43, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 6 強く飲む３回, pitch: 80, volume: 85}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [プリプリした精子の固まりは舌の上からこぼれ落ちて]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [あっという間に口腔を満たしていくが、シルフィーは落ち着いて]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それを嚥下していった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 08ストロークSE(長), pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「けぷ……んぐっ……んむぅ\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　じゅるるっ\I[122]　くちゃっ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [口内から胃の底までを少年の精子で染め上げられる喜びを]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [噛みしめながら、それでもシルフィーは亀頭と]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それに被さった皮への愛撫を続けていた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「くう……ううう……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [フェラチオでだいぶほぐれていた感はあったのだが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [射精によって怒張のこわばりが少し萎えたおかげで]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [隙間のさらに深くまで舌先が侵入する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーはここぞとばかり舌を激しく蠢かせ、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [隠されたカリ首をなぞるように舌先をくるりと動かすと]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [亀頭を覆っていた皮が一気にめくれ上がった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「あああっ…!」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [43, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [63]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [多少は痛みもあったかもしれないがそれに勝る刺激が]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [さらなる射精を促していた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [screen.clear_pictures]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '#upF1・体1-1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [8, '#upF1・笑顔3', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [12, '#upF2・テコキ1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [13, '#upF2・口元唾液', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [全消去して再表示。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [シルフィーの身体は最初と違うもの。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「ハァ、ハァ\I[122]　あは、すっかり剥けちゃったね\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [行為の激しさを物語る唾液と精液の跡を]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [べっとりと口元にこびり付かせながら、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーは満足げにルニオの肉棒を眺めた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [大きさは大人のモノに比べるべくもないが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [粘液に濡れ光るその陰茎は文字通り一皮むけた状態で]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーが慣れ親しんだ形を誇示している。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['(それに……\I[122])']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [二回も射精したのにまだシルフィーの手の中で硬さを保ち、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ヒクヒクと物欲しそうに脈動を続けていた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「つぎ、出来るよね\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「こ、ここで、ですか？」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオが息を飲む。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [フェラチオだけならまだしも、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [大勢の男たちが立ち働いている港の片隅でセックスまで…]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「ああん…オチンポ、もっと硬くなってきたぁ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ハァ、ハァ……うぅ……シルフィーさん…」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [悪戯するように軽く肉棒をしごかれて]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオも次第に呼吸を早めていく。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [期待するようなシルフィーの淫らな視線とこの状況に]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [少年の判断力も狂わされ、目の前で交尾を待ち焦がれているメスを]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [自分の物にしたいという男としての本能が目覚め始めていた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [screen.clear_pictures]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '#クンニ2体1-1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [20, '#クンニ2愛液1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [50, '#クンニ2・ショタ1-1', 0, 0, 0, 0, 100, 100, 255, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [フェードアウト中にピクチャ表示。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand
+        i: 0
+        c: 205
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &9 !ruby/object:RPG::MoveCommand {code: 19, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 505, p: [*9]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [セックスホコグラは無し？]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [62]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「ああっ\I[122]　はぁん\I[122]　イイッ、そこぉ\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [' オチンポでいっぱい擦れてる\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーは嬌声を上げながら尻を振っていた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [はしたない喘ぎ声も、ペニスが突き込まれるたびに鳴る]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [淫猥なネバついた音も潮騒と港の喧騒に紛れてしまっていたが、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [今のシルフィーにはどうでもいい事だった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, '#クンニ2体1', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, '#クンニ2表情1-1', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [1, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [2, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [3, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [振り向きに変更。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['(はあん\I[122]　だって、娼婦なんだもの…']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [' みんなやってることなんだからぁ\I[122])']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [誰かに物音を聞かれようが、覗かれようが、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [アレルタの娼婦である以上は咎められることはまずない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [組合を通して公認された娼婦は住人たちの性処理が仕事なので]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それに関わる事ならば大抵のことは見逃してもらえる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [62]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [三等市民として自由を奪われた格好のシルフィーだが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その一方では通常ありえないほどの自由と権利を]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [娼婦として与えられているというわけだった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['(あはっ\I[122]　娼婦になって…良かった\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [' なってなかったら、ルニオくんに']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [' セックスしてもらえなかったんだから…ああん\I[122])']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [4, '#クンニ2閉じ目2', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [3, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [4, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [なぜ娼婦になったのかという理由をぽっかり忘れて]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーは年下の少年と交尾する悦びを存分に堪能していた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「はあっ、ううっ、ううっ……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [62]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [60, '#クンニ2膣2', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [60, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオはシルフィーの腰をつかんで]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [がむしゃらに肉棒を突き立ててくる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [膣を押し広げられる圧迫感はとうぜん物足りないが]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ポンテのペニスよりも肉茎はすこし長いらしく、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それがいい具合にコツコツと断続的に子宮口をノックしてきて]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーを喜ばせていた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [4, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [3, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「んっ、んあっ\I[122]　あはっ、元気なオチンポ\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　すごくいいよ、ルニオくん\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [声を快楽に蕩けさせながらルニオを励ましていく。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その言葉はウソ偽りではなかった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [セックスは相手のペニスが大きければ大きいだけ快楽も増す、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [という単純なものではない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それよりもどうやってその気にさせ、さらに気分を盛り上げるかの方が]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [重要になってくる場合がある。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その点、誰かに見られるかもしれない野外で]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [年下のルニオにバックから生のチンポで犯されるという状況は]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーの興奮を高めるにはこれ以上ないくらいの]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [最高のシチュエーションだった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [5, '#クンニ2閉じ目2-1', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [61, '#クンニ2膣2-1', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [3, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [5, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [61, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [表情変更。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [膣カットインは重ねるだけ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [62]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「ああっ、んひっ\I[122]　そこぉ、すごくいい\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [またしてもコツンと子宮を刺激され、]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーはだらしなく舌を垂らして喘ぐ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「いやぁ、気持ちいい\I[122]　ルニオくんにイかされちゃう\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ああぁっ、シルフィーさん……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [6, '#クンニ2表情2-1', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [5, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [6, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「うん……来て\I[122]　いっぱい中に出して\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「あっ、あああ……っ!」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [7, '#クンニ2閉じ目4', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [15, '#クンニ2閉じ目涙2', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [62, '#クンニ2膣2-2', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [6, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [7, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [15, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [62, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [表情変更。涙追加。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [膣カットインは重ねるだけ。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [63]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あひいいぃぃっ!　ザーメンすごいぃぃぃ\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　イクッ!　すごいのキちゃうっ\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ダクダクと濃厚極まりないザーメンが子宮口に浴びせかけられる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [たちまち子宮の中までべっとりと染め上げられていくのを感じながら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーは絶頂を極めていた。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [16, '#クンニ2・涙', 0, 0, 0, 0, 100, 100, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [7, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [15, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [6, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [16, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [表情2-1に戻す。涙変更。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「おっ、おおおぉ\I[122]　']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　んはぁ\I[122]　排卵してなくても…妊娠しちゃいそう\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [もちろんそんなことはあり得ないと分かっている。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そもそも本当に妊娠などさせられたら困ったどころの話ではなくなる。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [だがそれを理解していてもなお、人間に、ましてや少年に]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [孕ませられるという妄想はシルフィーの興奮を]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [掻き立てずにはおかないほどに魅力的なものだった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ルニオ]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ハァ、ハァ……シ、シルフィーさん……僕……」]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「うん、好きなだけ犯して\I[122]']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　ルニオくんのザーメンで種付けして\I[122]」']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [若さのためなのか、いまだに衰えを感じさせないペニスに]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [愛しささえ感じてしまう。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [6, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [3, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [表情1-1に戻す。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [(もしかしたら本当に、ルニオくんに孕まされちゃう時が]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [' 来るかも……\I[122])']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そんな予感に鼓動を早めながら]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーは喜んで抜かずの二回戦目を迎えるのだった。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [以下、回想部屋に戻る実行内容。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [screen.clear_pictures]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ピクチャ全消去]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [16, 16, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 211, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [25]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [回想を見始めたときにボテ腹だったか、夜だったかの判定。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [元の状態に戻る。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [23]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [重要・移動先の自動実行条件をオフ。そうしないと繰り返せない。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　オフだけはコモンイベントにまとめて消し忘れを防止する。]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 38, 17, 7, 8, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: ルニオ
+    x: 21
+    y: 6
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 38
+        switch2_id: 1
+        variable_id: 69
+        variable_value: 1
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: '##少年たち'
+        character_index: 1
+        direction: 2
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 45, parameters: ['@auto_balloon =1']}
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: true
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+parallax_sx: 0
+bgm: !ruby/object:RPG::BGM {name: 初夏の車窓より(港町用), volume: 70, pitch: 100}
+tileset_id: 101
+encounter_step: 30
+width: 35
+data: !ruby/object:Table
+  dim: 3
+  x: 35
+  y: 20
+  z: 4
+  data:
+  - 18e2 18e6 0651 0652 0652 0652 0652 0652 0652 0652 0653 1020 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010
+  - 18e0 18e4 0651 0652 0652 0652 0652 0652 0652 0652 0653 1020 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010
+  - 18e0 18e4 0651 0652 0652 0652 0652 0652 0652 0652 0653 1020 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010
+  - 18e8 18ec 1032 1024 1024 1024 1024 1024 1024 1024 1024 1011 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1014 102c 102c 102c 102c 102c 102c 102c
+  - 0e54 0e2e 1020 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1014 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 1036 0619 0619 0619 0619 0619 0619 0619
+  - 0e32 0e54 1020 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1028 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619
+  - 0e30 0e48 1020 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1028 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619 0619
+  - 0e4c 0e56 1020 1010 1010 1010 1010 1010 1010 1010 1010 1014 102c 102c 1036 0619 0619 1673 1672 1672 1672 1672 1672 1672 1672 1672 1672 1672 1672 1672 1672 1672 1672 1672 1672
+  - 0e21 0e25 1020 1010 1014 102c 102c 1018 1010 1010 1010 1028 0619 0619 0619 0619 0619 1679 1678 1678 1678 1678 1678 1678 1678 1678 1678 1678 1678 1678 1678 1678 1678 1678 1678
+  - 0e54 0e20 1020 1010 1028 0e5a 0e2a 1020 1010 1010 1014 1036 0619 0619 0619 1673 1676 09e0 09e0 09e0 0822 0814 0814 0814 0814 0814 0814 0824 09e0 09e0 09e0 09e0 09e0 09e0 09e0
+  - 0e56 0e20 1020 1010 1028 0e5c 0e20 1020 1010 1010 1028 0619 0619 0619 0619 1679 167c 09e0 09e0 0822 0801 0800 0800 0800 0800 0800 0800 0802 0800 09e0 09e0 09e0 09e0 09e0 09e0
+  - 0e14 0e1a 1020 1010 1028 0e22 0e1a 1020 1010 1010 1028 0619 0619 0619 1677 09e0 09e0 09e0 09e0 0810 0800 0800 0800 0800 0800 0800 0800 0800 0818 09e0 09e0 09e0 09e0 09e0 09e0
+  - 0e1c 0e26 1020 1010 1028 0e28 0e26 1020 1010 1010 1028 0619 0619 0619 167d 09e0 09e0 09e0 0822 0801 0800 0800 0800 0800 0800 0800 0800 0800 0802 0824 09e0 09e0 09e0 09e0 09e0
+  - 1024 1024 1011 1010 1012 1024 1024 1011 1010 1010 1012 0619 0619 1677 09e0 09e0 09e0 0822 0801 0804 081c 081c 081c 081c 081c 081c 081c 081c 0808 0802 0824 09e0 09e0 09e0 09e0
+  - 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 0619 0619 167d 09e0 09e0 09e0 0810 0800 0818 0e22 0e14 0e14 0e14 0e14 0e14 0e14 0e24 0810 0800 0818 09e0 09e0 09e0 09e0
+  - 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 0619 0619 09e0 09e0 09e0 09e0 0810 0800 0818 0e10 0e00 0e00 0e00 0e00 0e00 0e00 0e18 0810 0800 0818 09e0 09e0 09e0 09e0
+  - 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 0619 0619 09e0 09e0 09e0 0822 0801 0800 0818 0e10 0e00 0e00 0e00 0e00 0e00 0e00 0e18 0810 0800 0802 0824 09e0 09e0 09e0
+  - 102c 102c 1018 1010 1010 1010 1010 1010 1010 1010 1028 0619 0619 09e0 09e0 09e0 0810 0800 0800 0818 0e10 0e00 0e00 0e00 0e00 0e00 0e00 0e18 0810 0800 0800 0818 09e0 09e0 09e0
+  - 0e21 0e25 1020 1010 1010 1010 1010 1010 1010 1010 1028 0619 0619 09e0 09e0 09e0 0810 0800 0800 0818 0e10 0e00 0e00 0e00 0e00 0e00 0e00 0e18 0810 0800 0800 0818 09e0 09e0 09e0
+  - 0e54 0e20 1020 1010 1010 1010 1010 1010 1010 1010 1028 0619 0619 09e0 09e0 09e0 0810 0800 0800 0818 0e10 0e00 0e00 0e00 0e00 0e00 0e00 0e18 0810 0800 0800 0818 09e0 09e0 09e0
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0dc0 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0dc0 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0dcc 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0dca 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0dc0 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0dc0 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0dc0 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0dc0 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0dc0 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0852 0844 0844 0844 0844 0844 0844 0854 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0dc0 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0852 0831 0830 0830 0830 0830 0830 0830 0832 0830 0000 0000 0000 0000 0000 0000
+  - 0dc1 0dc7 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0840 0830 0830 0830 0830 0830 0830 0830 0830 0848 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0852 0831 0830 0830 0830 0830 0830 0830 0830 0830 0832 0854 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0852 0831 0834 084c 084c 084c 084c 084c 084c 084c 084c 0838 0832 0854 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0840 0830 0848 0000 0000 0000 0000 0000 0000 0000 0000 0840 0830 0848 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0840 0830 0848 0000 0000 0000 0000 0000 0000 0000 0000 0840 0830 0848 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0852 0831 0830 0848 0000 0000 0000 0000 0000 0000 0000 0000 0840 0830 0832 0854 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0840 0830 0830 0848 0000 0000 0000 0000 0000 0000 0000 0000 0840 0830 0830 0848 0000 0000 0000
+  - 0dc1 0dc5 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0840 0830 0830 0848 0000 0000 0000 0000 0000 0000 0000 0000 0840 0830 0830 0848 0000 0000 0000
+  - 0000 0dc0 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0840 0830 0830 0848 0000 0000 0000 0000 0000 0000 0000 0000 0840 0830 0830 0848 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 03dc 03dd 03f5 03f5 03f5 03f5 03f5 03f5 03ec 03f5 03ed 03ed 03af 03ed 03f5 03f5 03f5 03ed 03a4 03a5 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 03e4 03e5 03f5 03ed 03ed 03f5 03f5 03f5 03f4 03f5 03f5 03f5 0000 03f5 03f5 03f5 03f5 03f5 03ac 03ad 0000 0000 0000
+  - 0000 0000 0380 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 03f5 03f5 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0380 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0388 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0388 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0390 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0390 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0380 03ec 03ec 03b6 03b7 03a4 03a5 0000 0000 00c6 0081 0000 0000 0000 0000 0000 0000 0000 0000 0000 03ed
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0388 03f4 03f4 03be 03bf 03ac 03ad 0000 0000 00ce 0089 0000 0001 0002 0000 0000 0337 0000 0000 0000 03f5
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0390 0000 0000 0000 0000 0000 0000 0000 0000 00d6 0091 0000 0000 0000 0000 0000 0000 0000 0000 03c4 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 03ed 03ed 0000 0000 033f 0000 0000 0000 0000 0000 0000 00de 0099 0000 0000 0000 0000 0000 0000 0000 0000 03cc 0000
+  - 0000 0000 0380 0000 0000 0000 0000 0000 0000 0000 0000 0000 03f5 03f5 0000 0000 0000 0000 0000 0000 00e3 00e4 00e5 00e6 00a1 00a2 00a3 00a4 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0388 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 00ea 00eb 00ec 00ed 00ee 00a9 00aa 00ab 00ac 00a4 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0390 0000 0000 0000 0000 0000 0000 0000 0000 03ed 03ed 03ed 0000 0000 0000 0000 0000 00f2 00f3 00f4 00f5 00f6 00b1 00b2 00b3 00b4 00b5 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 03ed 03ed 03f5 0000 0000 0000 0000 00f9 00fa 00fb 00fc 00fd 00fe 00b9 00ba 00bb 00bc 00bd 00be 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 03ed 03ed 0000 0000 0000 0103 0021 0022 0023 0024 0025 0026 0027 0180 0181 0182 0183 0184 0185 0186 0104 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 03ed 03f5 0000 0000 0000 0000 0029 002a 002b 002c 002d 002e 002f 0188 0189 018a 018b 018c 018d 018e 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 03ed 033f 0000 0000 0000 0000 0031 0032 0033 0034 0035 0036 0037 0190 0191 0192 0193 0194 0195 0196 0000 0000 0000 0000
+  - 0000 0000 0380 0000 0000 0000 0000 0000 0000 0000 0000 03f5 0000 0000 0000 0000 0038 0039 003a 003b 003c 003d 003e 003f 0198 0199 019a 019b 019c 019d 019e 019f 0000 0000 0000
+  - 0000 0000 0388 0000 0000 0000 0000 0000 0000 0000 0000 0000 03f9 0000 0000 0000 0040 0041 0042 0043 0044 0008 0046 0047 01a0 01a1 0045 01a3 01a4 01a5 01a6 01a7 0000 0000 0000
+  - 0000 0000 0390 0000 0000 0000 0000 0000 0000 0000 0000 0000 03f9 0000 0000 0000 0048 0049 004a 004b 004c 004d 004e 004f 01a8 01a9 004c 01ab 01ac 01ad 01ae 01af 0000 0000 0000
+  - 03ed 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 03f8 0130 0131 0132 0133 0051 0052 0053 0054 0055 0056 0057 01b0 01b1 01b2 01b3 01b4 01b5 01b6 0134 0135 0136 0000
+  - 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0200 0200 0200
+  - 0000 0000 0205 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0205 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0200 0200 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0200 0200 0200 0200 0200 0200 0000 0000 0000 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0200 0000 0000 0000 0000 0000 0000 0000 0000 0200 0200 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0200 0000 0000 0000 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0200 0000 0000 0000 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0200 0200 0200 0000 0000 0200 0000 0000 0000 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0200 0000 0000 0200 0200 0200 0000 0000 0000 0200 0000 0000 0000 0100 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0200 0000 0000 0200 0200 0200 0000 0000 0000 0200 0000 0000 0000 0100 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0200 0200 0200 0200 0200 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0200 0000 0000 0000 0200 0200 0200 0200 0200 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0100 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0200 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0100 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0200 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0100 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0100 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0100 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+bgs: !ruby/object:RPG::BGS {name: Sea, volume: 60, pitch: 100}
+parallax_loop_y: false
+autoplay_bgm: true
+encounter_list: []
+autoplay_bgs: true
+parallax_show: false
+scroll_type: 0
+parallax_loop_x: false
+disable_dashing: false
+parallax_sy: 0
+display_name: ''
+specify_battleback: true
+note: ''
+battleback1_name: Castle
+battleback2_name: 波止場
