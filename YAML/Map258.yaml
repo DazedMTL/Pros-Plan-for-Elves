@@ -1,1295 +1,1378 @@
---- !ruby/object:RPG::Map
-parallax_name: ''
-height: 20
-events:
-  2: !ruby/object:RPG::Event
-    id: 2
-    name: 回想用武器屋
-    x: 12
-    y: 5
-    pages:
+!ruby/object:RPG::Map
+'parallax_name': ''
+'height': !!int '20'
+'events':
+  !!int '2': !ruby/object:RPG::Event
+    'id': !!int '2'
+    'name': '回想用武器屋'
+    'x': !!int '12'
+    'y': !!int '5'
+    'pages':
     - !ruby/object:RPG::Event::Page
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch1_valid: false
-        switch2_valid: false
-        variable_valid: false
-        self_switch_valid: false
-        item_valid: false
-        actor_valid: false
-        switch1_id: 1
-        switch2_id: 1
-        variable_id: 1
-        variable_value: 0
-        self_switch_ch: A
-        item_id: 1
-        actor_id: 1
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        tile_id: 0
-        character_name: '#一般人・私服のみ・男2'
-        character_index: 4
-        direction: 2
-        pattern: 1
-      move_type: 0
-      move_speed: 3
-      move_frequency: 2
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        wait: false
-        list:
-        - !ruby/object:RPG::MoveCommand {code: 45, parameters: ['@auto_balloon =1']}
-        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
-      walk_anime: false
-      step_anime: true
-      direction_fix: false
-      through: false
-      priority_type: 1
-      trigger: 0
-      list:
-      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+      'condition': !ruby/object:RPG::Event::Page::Condition
+        'switch1_valid': !!bool 'false'
+        'switch2_valid': !!bool 'false'
+        'variable_valid': !!bool 'false'
+        'self_switch_valid': !!bool 'false'
+        'item_valid': !!bool 'false'
+        'actor_valid': !!bool 'false'
+        'switch1_id': !!int '1'
+        'switch2_id': !!int '1'
+        'variable_id': !!int '1'
+        'variable_value': !!int '0'
+        'self_switch_ch': 'A'
+        'item_id': !!int '1'
+        'actor_id': !!int '1'
+      'graphic': !ruby/object:RPG::Event::Page::Graphic
+        'tile_id': !!int '0'
+        'character_name': '#一般人・私服のみ・男2'
+        'character_index': !!int '4'
+        'direction': !!int '2'
+        'pattern': !!int '1'
+      'move_type': !!int '0'
+      'move_speed': !!int '3'
+      'move_frequency': !!int '2'
+      'move_route': !ruby/object:RPG::MoveRoute
+        'repeat': !!bool 'true'
+        'skippable': !!bool 'false'
+        'wait': !!bool 'false'
+        'list':
+        - !ruby/object:RPG::MoveCommand {'code': !!int '45', 'parameters': ['@auto_balloon =1']}
+        - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
+      'walk_anime': !!bool 'false'
+      'step_anime': !!bool 'true'
+      'direction_fix': !!bool 'false'
+      'through': !!bool 'false'
+      'priority_type': !!int '1'
+      'trigger': !!int '0'
+      'list':
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
     - !ruby/object:RPG::Event::Page
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch1_valid: false
-        switch2_valid: false
-        variable_valid: true
-        self_switch_valid: false
-        item_valid: false
-        actor_valid: false
-        switch1_id: 1
-        switch2_id: 1
-        variable_id: 53
-        variable_value: 1
-        self_switch_ch: A
-        item_id: 1
-        actor_id: 1
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        tile_id: 0
-        character_name: ''
-        character_index: 0
-        direction: 2
-        pattern: 0
-      move_type: 0
-      move_speed: 3
-      move_frequency: 3
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        wait: false
-        list:
-        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
-      walk_anime: true
-      step_anime: false
-      direction_fix: false
-      through: false
-      priority_type: 0
-      trigger: 0
-      list:
-      - !ruby/object:RPG::EventCommand {i: 0, c: 214, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-  3: !ruby/object:RPG::Event
-    id: 3
-    name: 夜用武器屋
-    x: 10
-    y: 1
-    pages:
+      'condition': !ruby/object:RPG::Event::Page::Condition
+        'switch1_valid': !!bool 'false'
+        'switch2_valid': !!bool 'false'
+        'variable_valid': !!bool 'true'
+        'self_switch_valid': !!bool 'false'
+        'item_valid': !!bool 'false'
+        'actor_valid': !!bool 'false'
+        'switch1_id': !!int '1'
+        'switch2_id': !!int '1'
+        'variable_id': !!int '53'
+        'variable_value': !!int '1'
+        'self_switch_ch': 'A'
+        'item_id': !!int '1'
+        'actor_id': !!int '1'
+      'graphic': !ruby/object:RPG::Event::Page::Graphic
+        'tile_id': !!int '0'
+        'character_name': ''
+        'character_index': !!int '0'
+        'direction': !!int '2'
+        'pattern': !!int '0'
+      'move_type': !!int '0'
+      'move_speed': !!int '3'
+      'move_frequency': !!int '3'
+      'move_route': !ruby/object:RPG::MoveRoute
+        'repeat': !!bool 'true'
+        'skippable': !!bool 'false'
+        'wait': !!bool 'false'
+        'list':
+        - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
+      'walk_anime': !!bool 'true'
+      'step_anime': !!bool 'false'
+      'direction_fix': !!bool 'false'
+      'through': !!bool 'false'
+      'priority_type': !!int '0'
+      'trigger': !!int '0'
+      'list':
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '214', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+  !!int '3': !ruby/object:RPG::Event
+    'id': !!int '3'
+    'name': '夜用武器屋'
+    'x': !!int '10'
+    'y': !!int '1'
+    'pages':
     - !ruby/object:RPG::Event::Page
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch1_valid: true
-        switch2_valid: false
-        variable_valid: false
-        self_switch_valid: false
-        item_valid: false
-        actor_valid: false
-        switch1_id: 1635
-        switch2_id: 1
-        variable_id: 1
-        variable_value: 0
-        self_switch_ch: A
-        item_id: 1
-        actor_id: 1
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        tile_id: 0
-        character_name: ''
-        character_index: 0
-        direction: 2
-        pattern: 1
-      move_type: 0
-      move_speed: 3
-      move_frequency: 3
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        wait: false
-        list:
-        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
-      walk_anime: false
-      step_anime: false
-      direction_fix: true
-      through: false
-      priority_type: 1
-      trigger: 3
-      list:
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [回想・商店街２-１。武器屋その１。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [33]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [1940]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [イベント状況に合わせて立ち絵変更。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: c 街19(街の中央広場)170919_125bpm, volume: 70, pitch: 100}]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [1]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ミスリル銀で作られた武器も扱ってるよ～!]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　東大陸のアッピア産ミスリルだから質も上等だよ～!」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「お嬢さんも護身用にひとつどうだい？]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　このミスリル製のナイフなんて装飾品としてもいい感じだと思うよ～!」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それは指ほどの大きさしかない小さなナイフだった。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [確かにどう見ても武器というよりは装飾品の類だ。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor1, 1, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「おいくらですか？」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「アッピア直輸入の逸品だからねぇ。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　でもお嬢ちゃんは俺好みのカワイコちゃんだから大サービス!]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　\C[14]5000ゴールド\C[0]でお譲りしちゃいましょう!」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor5, 7, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [(ふつうに高い)]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そもそも武器の相場など知らないから]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それが適正なのかどうかも分からなかった。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor1, 7, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [(買えないことはないけど]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [' できればお金は使いたくないし…)']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor5, 7, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あの～、わたしの\C[14]お仕事\C[0]の方でお支払いできないでしょうか\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [自分は娼婦なのだからお金は身体で稼ぐことになる。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [身体で払うのは同じなのだから、過程を一つ飛ばすだけに過ぎない。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そういう発想が浮かぶこと自体、すでに娼婦としての日常が]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [普通になってしまっていることの証だった。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [本人はまるで意識せず、負い目もほとんど感じなくなっている。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 4, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「おっと、そういう値引き交渉は初めてだなぁ……]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　まぁ普通の娼婦は武器屋になんか寄り付きもしないから当然か」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor1, 1, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋の若い男はあらためてシルフィーの身体を上から下まで眺めた。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 4, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ゴクリ……確かに身体を代価にしようってだけのモノはあるようだね。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　……ゴム無しで好きなだけ抱けるってことならいいよ」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor3, 4, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「好きなだけってのは大雑把すぎますよ。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　このお仕事ってかなり疲れるんですよ？]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　それにコンドームは絶対に付けてもらいますから」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 4, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「むむ。じゃあナマ中出し三回で」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor17, 6, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ゴム付けてくださいって言ってるでしょうが。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　……ナマでお口でサービスするってのじゃダメですか？」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor33, 4, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「いやいや、ナマフェラとベロチューとペッティングは基本だろ～。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　もちろんそのオッパイも好きなだけしゃぶらせてもらうからなっ」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor5, 7, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「注文が多いなぁ」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [20]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [1]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　　……それからしばらくの間、気合のこもった交渉が続けられた。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [53, 53, 0, 0, 1]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 211, p: [0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [専用変数１で武器屋ホコグラ消去。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [シルフィー透明化。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [80]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: c 探索15(セキュリティホール)180110_160bpm_3loop, volume: 65, pitch: 100}]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 213, p: [10, 4, true]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [店に誰も居なく、シルフィーも見えない。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [奥で何事か起こっていることを示すハートのフキダシを表示する。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 粘液系08(長), pitch: 100, volume: 85}]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '#胸愛撫３・体2', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [4, '#胸愛撫３・唾液1', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [5, '#胸愛撫３・普段着', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [15, '#胸愛撫３・男3', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [20, '#胸愛撫３・閉じ目1', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [1, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [4, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [5, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [15, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [下着差分が面倒なので下着無しで。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「んっ…んう……いやぁ……」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [唾液をたっぷり含んだ男の舌に乳首を執拗に弄ばれる。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ときおり乳輪ごとぱっくりと口に含まれて激しく舐めしゃぶられ、]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [まるで母乳をすするかのように吸引された。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [21, '#胸愛撫３・視線前1', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [21, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ああん……もう、まだですか…？」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 粘液系08(長), pitch: 100, volume: 85}]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「え、そんなに良くない？　乳首こんなに尖ってるけど。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　乳輪も少し膨らんですごくエッチな感じにオッパイも張ってるけど？」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [見せつけるようにレロンと乳首を舐め上げる。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [22, '#胸愛撫３・視線後ろ1', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [21, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [22, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「わ、悪くないですけど……むしろイイですけど……あンッ\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ははぁん、もうオマンコが待ち遠しいってわけだ♪」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「………………]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　……それに、こんな所でいつまでもやってるわけには……」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [それとなくシルフィーは周囲に視線をさまよわせた。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [店と言っても屋台に毛が生えたようなものである。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [店の奥に積まれた荷物の陰で行為に及んでいるものの、]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [少しでも声を立てれば何事かと外から覗かれてしまいそうだった。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「わかったよ。俺もそろそろ我慢の限界だしな♪]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　そら、壁に手をついて尻をこっちに向けろよ」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [20]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [screen.clear_pictures]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [一旦フェードアウトしてピクチャ消去。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [今度はフェードアウト中に次のピクチャ表示。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '#クンニ2体1-1', 0, 0, 0, 0, 100, 100, 255, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [5, '#クンニ2・バック2-3', 0, 0, 0, 0, 100, 100, 255, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [53]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あっ、んっ、んんっ\I[122]']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　あはっ、んおっ\I[122]　おおっ\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [背後から勢いよく抽送されるペニスに]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーは最初から蕩けた喘ぎ声を上げていた。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「なんだよ、あれだけ生チンポに抵抗してたのに]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　オマンコは悦びまくりじゃないの♪」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あんっ\I[122]　言わないで\I[122]']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　だ、だって\I[122]　あんなに焦らされたんだもの\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [53]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [甘いよがり声にハァハァと獣のような荒い吐息を混ぜながら]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーも腰を突き上げて男を迎え入れていた。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [男女の肌が打ち合わされ、性器同士が奏でる淫靡な交尾の音色が]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [店の奥に静かに響き渡る。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「それで、どうだよ？　俺のチンポの具合は？」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, '#クンニ2体1', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [15, '#クンニ2表情1', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [1, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [2, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [15, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [振り向き身体に変更。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [男そのまま。表情追加。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「…あ…あぁ……」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [53]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [振り向いたシルフィーは何も言わない。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [男に合わせて淫らに尻を振り立てている自分の様子で]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [察して欲しいものだった。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「中出しセックスは許すけど一回のみ、]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　ただし具合を見てから後は要相談って取り決めだろ～？]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　ちゃんと結論を出してくれよ♪」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [16, '#クンニ2表情1-1', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [15, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [16, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「うぅ……そんな中途半端な取り決め、]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　やめておけばよかった\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「んで？」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「うん\I[122]　すごくいいです\I[122]']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　好きなだけ、精子をいっぱい膣に出してください\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [快楽に蕩けた声でシルフィーはあっさりと屈服宣言していた。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['(だって、ほんとうに相性バッチリなんだもの……このオチンポ\I[122])']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [以前のシルフィーならば歯を食いしばってでもそんなことは]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [認めなかったかもしれない。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [だが今のシルフィーは素直に人間の男の力を認めていた。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [まだ多少の自尊心が残っていて素直になれない場面もあるが、]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [彼らが与えてくれる快楽の素晴らしさを身に染みて知っている。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [淫欲に屈した身体の隅々にまで刻み込まれてしまったセックスの味は]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [否定しようがない。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [だから男を奮い立たせるためにも]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [笑顔でこんな嘘をついてみせることもある。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「……子作りする以上、]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　妊娠させてくれなくちゃイヤですからね\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [52]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [上気した顔でそんなことを囁いた瞬間、]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [膣道を埋めていたペニスの硬さが一気に増したのを]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーは感じていた。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [17, '#クンニ2閉じ目1-2', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [16, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [17, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あっ、いやぁっ\I[122]　は、激しい\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [興奮した男の腰使いが速度を増していく。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [だがいつも以上に興奮しているのはシルフィーも同じだった。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [演技とはいえ、自分から口にした妊娠を求めるセリフが]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーの歪んだ被虐癖を大いに刺激していた。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「はあっ、ああっ\I[122]　おっきい\I[122]　んおっ、おおお\I[122]']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　き、来てっ!　ザーメン出してっ\I[122]　わたしを妊娠させてっ!」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [63]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, '#クンニ2中出し', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [4, '#クンニ2・ぴくぴく', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [6, '#クンニ2・バック2', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [5, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 60, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [3, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [4, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [6, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [男シルエット・動き停止に交換。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [中出し+ピクピク。男シルエットの下に表示しなければならない。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [最後の瞬間になけなしの理性が働くことで]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [大声で哀願することだけは何とか避けられた。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [18, '#クンニ2閉じ目1-4', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [50, '#クンニ2膣1-3', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [17, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [18, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [50, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あ……ああ……んうう♪　ホントにいっぱい……\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ぴっちりと肉棒で埋められているはずの淫肉の隙間から]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [射精されたばかりの白濁液が滲み出していた。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [screen.clear_pictures]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [もう一度、一旦フェードアウトしてピクチャ消去。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [またフェードアウト中に次のピクチャ表示。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '#アップA1全裸', 0, 0, 0, 0, 100, 100, 255, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, '#アップA1マンコ2', 0, 0, 0, 0, 100, 100, 255, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, '#アップA1普段着', 0, 0, 0, 0, 100, 100, 255, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [4, '#アップA1汁溢れ1', 0, 0, 0, 0, 100, 100, 255, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [20, '#アップA1引き抜き1', 0, 0, 0, 0, 100, 100, 255, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 挿入03, pitch: 100, volume: 90}]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ぬちゃりと濡れた音を立ててペニスが引き抜かれる。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 射精_膣内03, pitch: 80, volume: 90}]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [5, '#アップA1汁溢れ2', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [5, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [精液逆流。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ハァ、ハァ……」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [男は心地よい疲れと共に種付けの余韻を楽しんだ。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [お許しを頂いた以上、もちろんこの一回だけで済ます気はない。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [セックスの代わりに渡すと約束しているミスリルナイフの値段分、]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [前から後ろからたっぷりとペニスを挿入して]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [この少女の膣粘膜に肉棒の味を刷り込んでやるつもりだった。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「んふ……\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーが媚びを含んだ声で吐息をつきながら]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [誘うように尻を振っていた。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [肉の花弁から溢れ出した二人の歪んだ愛の結晶が淫靡にフラフラと揺れ、]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [糸を引きながら店の床にしたたり落ちていった。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [以下、回想部屋に戻る実行内容。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [screen.clear_pictures]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [53, 53, 0, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [25]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [回想を見始めたときにボテ腹だったか、夜だったかの判定。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [元の状態に戻る。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [23]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [重要・移動先の自動実行条件をオフ。そうしないと繰り返せない。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　オフだけはコモンイベントにまとめて消し忘れを防止する。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 38, 23, 7, 8, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 214, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-  4: !ruby/object:RPG::Event
-    id: 4
-    name: 食料品店のおばさん
-    x: 16
-    y: 5
-    pages:
+      'condition': !ruby/object:RPG::Event::Page::Condition
+        'switch1_valid': !!bool 'true'
+        'switch2_valid': !!bool 'false'
+        'variable_valid': !!bool 'false'
+        'self_switch_valid': !!bool 'false'
+        'item_valid': !!bool 'false'
+        'actor_valid': !!bool 'false'
+        'switch1_id': !!int '1635'
+        'switch2_id': !!int '1'
+        'variable_id': !!int '1'
+        'variable_value': !!int '0'
+        'self_switch_ch': 'A'
+        'item_id': !!int '1'
+        'actor_id': !!int '1'
+      'graphic': !ruby/object:RPG::Event::Page::Graphic
+        'tile_id': !!int '0'
+        'character_name': ''
+        'character_index': !!int '0'
+        'direction': !!int '2'
+        'pattern': !!int '1'
+      'move_type': !!int '0'
+      'move_speed': !!int '3'
+      'move_frequency': !!int '3'
+      'move_route': !ruby/object:RPG::MoveRoute
+        'repeat': !!bool 'true'
+        'skippable': !!bool 'false'
+        'wait': !!bool 'false'
+        'list':
+        - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
+      'walk_anime': !!bool 'false'
+      'step_anime': !!bool 'false'
+      'direction_fix': !!bool 'true'
+      'through': !!bool 'false'
+      'priority_type': !!int '1'
+      'trigger': !!int '3'
+      'list':
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['回想・商店街２-１。武器屋その１。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '33']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '1940']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['イベント状況に合わせて立ち絵変更。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '241', 'p': [!ruby/object:RPG::BGM {'name': 'c 街19(街の中央広場)170919_125bpm', 'volume': !!int '70', 'pitch': !!int '100'}]}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '222', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '1']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "We also handle weapons made of mithril
+
+            silver~! They are made from Appia-produced mithril on the
+
+            Eastern Continent, so the quality is top-notch~!"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "How about getting one for self-defense, miss?
+
+            This mithril-made knife can also be used as a decorative
+
+            item, I think it looks great~!"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['It was a small knife that was only the size of a finger. It
+
+            certainly looked more like a decorative item than a weapon.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['actor1', !!int '1', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "How much is it?"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Since it''s a special import from Appia, you
+
+            know. But since you''re a cute girl that I like, I''ll give
+
+            you a big discount! Let''s sell it for \C[14]5000 gold\C[0]!"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['actor5', !!int '7', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "It''s quite expensive."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['I didn''t even know the market price for weapons, so I didn''t
+
+            know if that was a fair price or not.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['actor1', !!int '7', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: (I can buy it if I have to, but I''d rather not spend
+
+            the money if possible...)']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['actor5', !!int '7', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Um, is it possible to pay for it with my \C[14] job
+
+            \C[0]?"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Since I am a prostitute, I have to earn money with my body.
+
+            Since paying with my body is the same, it''s just skipping a
+
+            step in the process.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The fact that such an idea comes to mind is already proof
+
+            that her daily life as a prostitute has become normal. She
+
+            herself is completely unaware of it and feels little to no
+
+            guilt.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['actor33', !!int '4', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Oh, this is the first time I''ve had someone
+
+            negotiate a discount like that... Well, normal prostitutes
+
+            wouldn''t even come near a weapon shop, so I guess it''s
+
+            natural."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['actor1', !!int '1', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The young man at the weapon shop looked at Sylphy''s body
+
+            from top to bottom again.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['actor33', !!int '4', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Gulp... It seems there are things that can be
+
+            exchanged for the body as a price. ...If it means I can have
+
+            you without a condom as much as I want, then it''s fine."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['actor3', !!int '4', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Saying ''as much as you want'' is too vague. This job
+
+            is quite tiring, you know? And I absolutely insist on using
+
+            a condom."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['actor33', !!int '4', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Hmm. Then, three times without a condom."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['actor17', !!int '6', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "I''m asking you to use a condom, you know... Is it
+
+            not possible for you to receive oral service without a
+
+            condom?"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['actor33', !!int '4', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "No, no, it''s basic to have raw fellatio and
+
+            tongue play. Of course, I''ll let you suck on those breasts
+
+            as much as you like too."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['actor5', !!int '7', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "I have a lot of orders, huh."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '20']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '221', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '30']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '242', 'p': [!!int '1']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': [' 　　...After that, intense negotiations continued for a while.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '30']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '122', 'p': [!!int '53', !!int '53', !!int '0', !!int '0', !!int '1']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '211', 'p': [!!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['専用変数１で武器屋ホコグラ消去。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['シルフィー透明化。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '80']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '241', 'p': [!ruby/object:RPG::BGM {'name': 'c 探索15(セキュリティホール)180110_160bpm_3loop', 'volume': !!int '65', 'pitch': !!int '100'}]}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '222', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '213', 'p': [!!int '10', !!int '4', !!bool 'true']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['店に誰も居なく、シルフィーも見えない。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['奥で何事か起こっていることを示すハートのフキダシを表示する。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '250', 'p': [!ruby/object:RPG::SE {'name': '粘液系08(長)', 'pitch': !!int '100', 'volume': !!int '85'}]}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '1', '#胸愛撫３・体2', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '4', '#胸愛撫３・唾液1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '5', '#胸愛撫３・普段着', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '15', '#胸愛撫３・男3', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '20', '#胸愛撫３・閉じ目1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '1', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '4', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '5', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '15', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '20', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['下着差分が面倒なので下着無しで。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Mmm... Nngh... No... Ahh..."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The nipples were persistently played with by a man''s tongue,
+
+            filled with plenty of saliva. Occasionally, the entire
+
+            areola was taken into the mouth and vigorously licked and
+
+            sucked, as if sucking on breast milk.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '21', '#胸愛撫３・視線前1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '20', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '21', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Ahh... already, not yet...?"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '251', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '250', 'p': [!ruby/object:RPG::SE {'name': '粘液系08(長)', 'pitch': !!int '100', 'volume': !!int '85'}]}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Huh, is it not good? Even though my nipples
+
+            are so erect. And my areolas are a little swollen, making my
+
+            breasts look really sexy, you know?"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Licking up the nipples with a slurp, as if showing off.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '22', '#胸愛撫３・視線後ろ1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '21', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '22', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "W-It''s not bad... In fact, it''s good... Ahh..."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Haha, so you''re looking forward to my pussy,
+
+            huh♪"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "... And besides, we can''t keep doing this in a
+
+            place like this forever..."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy subtly glanced around her surroundings.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The translation of the text is: "Although it''s called a
+
+            shop, it''s more like a stall with some added features. They
+
+            were engaging in the act behind the piled-up goods in the
+
+            back of the shop, but they were afraid that if they made
+
+            even a slight noise, someone from outside might peek in."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Alright, I got it. I''m also reaching my limit
+
+            soon, you know♪ Now, put your hands on the wall and turn
+
+            your butt towards me."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '251', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '20']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '221', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '251', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '355', 'p': ['screen.clear_pictures']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['一旦フェードアウトしてピクチャ消去。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['今度はフェードアウト中に次のピクチャ表示。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '1', '#クンニ2体1-1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '5', '#クンニ2・バック2-3', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '60']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '53']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '222', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '30']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Ah, ngh, mmm \I[122] Ahh, noo \I[122] Oohh \I[122]"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy was moaning with pleasure from the penis thrusting
+
+            forcefully from behind.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "What''s with you? Even though you resisted the
+
+            raw dick so much, your pussy is in ecstasy, isn''t it♪"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Ah... Don''t say it... B-because... I was teased so
+
+            much..."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '251', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '53']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy was welcoming the man by thrusting her hips up while
+
+            mixing her sweet moans with rough, beast-like breaths.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The sound of the intimate and lascivious copulation between
+
+            the man and woman''s skin reverberates quietly in the back of
+
+            the shop.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "So, how is it? How does my dick feel?"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '2', '#クンニ2体1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '15', '#クンニ2表情1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '1', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '2', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '15', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['振り向き身体に変更。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['男そのまま。表情追加。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "...Ah...Ahh..."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '251', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '53']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy, who turned around, said nothing. She wanted him to
+
+            understand from her lascivious movements as she matched the
+
+            man and shook her buttocks.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "I''ll allow creampie sex, but only once.
+
+            However, we''ll need to discuss it depending on the
+
+            situation, alright? Give me a clear answer♪"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '16', '#クンニ2表情1-1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '15', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '16', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Ugh... I should have just stopped with such a half-
+
+            hearted agreement \I[122]."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "So, what''s up?"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Yes... It feels really good... Please ejaculate as
+
+            much semen as you like inside my vagina."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy, with a voice filled with pleasure, declared her
+
+            surrender easily.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: (Because, you know, we really have perfect
+
+            compatibility... with this dick \I[122])']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Previous Sylphy might have gritted her teeth and not
+
+            admitted such a thing. But the current Sylphy honestly
+
+            acknowledged the power of a human man.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['There are still moments when I can''t be completely honest
+
+            due to some remaining self-esteem, but I know the greatness
+
+            of the pleasure they give me deep in my being. The taste of
+
+            sex that has been engraved into every corner of my body,
+
+            succumbing to lust, cannot be denied.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['So, in order to motivate men, there are times when I pretend
+
+            with a smile and tell such lies.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "...If we''re going to make a baby, I don''t want you
+
+            to refuse to impregnate me, you know \I[122]."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '251', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '52']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy felt the hardness of the penis filling her vagina
+
+            increase instantly when he whispered such things with a
+
+            flushed face.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '17', '#クンニ2閉じ目1-2', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '16', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '17', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Ah, no... Ah, it''s intense..."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The excited man''s hip movements are increasing in speed. But
+
+            Sylphy was also more excited than usual.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Even though it was acting, the line of seeking pregnancy
+
+            that she spoke herself greatly stimulated Sylphy''s twisted
+
+            masochistic tendencies.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Ah, ah... it''s big... oh, oh... come on! Release
+
+            your semen... impregnate me!"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '251', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '63']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '3', '#クンニ2中出し', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '4', '#クンニ2・ぴくぴく', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '6', '#クンニ2・バック2', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '5', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0', !!int '60', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '3', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '60', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '4', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '60', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '6', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '60', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['男シルエット・動き停止に交換。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['中出し+ピクピク。男シルエットの下に表示しなければならない。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['At the last moment, by the last shred of reason working, I
+
+            managed to avoid begging loudly.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '18', '#クンニ2閉じ目1-4', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '50', '#クンニ2膣1-3', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '17', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '18', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '50', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Ah... ah... nnn... ♪ So much... \I[122]"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The milky white liquid that had just been ejaculated was
+
+            oozing out from the gap of the lewd flesh that should have
+
+            been filled tightly with a meat rod.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '251', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '30']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '221', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '251', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '355', 'p': ['screen.clear_pictures']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['もう一度、一旦フェードアウトしてピクチャ消去。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['またフェードアウト中に次のピクチャ表示。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '1', '#アップA1全裸', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '2', '#アップA1マンコ2', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '3', '#アップA1普段着', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '4', '#アップA1汁溢れ1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '20', '#アップA1引き抜き1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '60']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '250', 'p': [!ruby/object:RPG::SE {'name': '挿入03', 'pitch': !!int '100', 'volume': !!int '90'}]}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '222', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '30']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The penis is pulled out, making a wet squelching sound.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '250', 'p': [!ruby/object:RPG::SE {'name': '射精_膣内03', 'pitch': !!int '80', 'volume': !!int '90'}]}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '5', '#アップA1汁溢れ2', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '5', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '60', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['精液逆流。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Haa, haa..."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The man enjoyed the lingering pleasure of impregnation along
+
+            with a pleasant fatigue. Now that he had obtained
+
+            permission, of course, he had no intention of settling for
+
+            just this one time.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['I intended to insert my penis plentifully from the front and
+
+            back, imprinting the taste of a meat rod onto this girl''s
+
+            vaginal mucosa, in exchange for the price of the mithril
+
+            knife promised instead of sex.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Nfu..."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy was shaking her hips as she exhaled with a voice that
+
+            contained flattery.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The twisted crystallization of their distorted love,
+
+            overflowing from the flesh petals, swayed obscenely and
+
+            dripped onto the floor of the shop, leaving behind a trail.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '30']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '242', 'p': [!!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['以下、回想部屋に戻る実行内容。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '221', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '251', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '355', 'p': ['screen.clear_pictures']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '122', 'p': [!!int '53', !!int '53', !!int '0', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '25']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['回想を見始めたときにボテ腹だったか、夜だったかの判定。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['元の状態に戻る。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '23']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['重要・移動先の自動実行条件をオフ。そうしないと繰り返せない。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　　　オフだけはコモンイベントにまとめて消し忘れを防止する。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '30']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '201', 'p': [!!int '0', !!int '38', !!int '23', !!int '7', !!int '8', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '222', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '214', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+  !!int '4': !ruby/object:RPG::Event
+    'id': !!int '4'
+    'name': '食料品店のおばさん'
+    'x': !!int '16'
+    'y': !!int '5'
+    'pages':
     - !ruby/object:RPG::Event::Page
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch1_valid: false
-        switch2_valid: false
-        variable_valid: false
-        self_switch_valid: false
-        item_valid: false
-        actor_valid: false
-        switch1_id: 1
-        switch2_id: 1
-        variable_id: 1
-        variable_value: 0
-        self_switch_ch: A
-        item_id: 1
-        actor_id: 1
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        tile_id: 0
-        character_name: '#貧しい村の人々2'
-        character_index: 3
-        direction: 2
-        pattern: 1
-      move_type: 0
-      move_speed: 3
-      move_frequency: 3
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        wait: false
-        list:
-        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
-      walk_anime: false
-      step_anime: true
-      direction_fix: false
-      through: false
-      priority_type: 0
-      trigger: 0
-      list:
-      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-  1: !ruby/object:RPG::Event
-    id: 1
-    name: 冒険者
-    x: 17
-    y: 7
-    pages:
+      'condition': !ruby/object:RPG::Event::Page::Condition
+        'switch1_valid': !!bool 'false'
+        'switch2_valid': !!bool 'false'
+        'variable_valid': !!bool 'false'
+        'self_switch_valid': !!bool 'false'
+        'item_valid': !!bool 'false'
+        'actor_valid': !!bool 'false'
+        'switch1_id': !!int '1'
+        'switch2_id': !!int '1'
+        'variable_id': !!int '1'
+        'variable_value': !!int '0'
+        'self_switch_ch': 'A'
+        'item_id': !!int '1'
+        'actor_id': !!int '1'
+      'graphic': !ruby/object:RPG::Event::Page::Graphic
+        'tile_id': !!int '0'
+        'character_name': '#貧しい村の人々2'
+        'character_index': !!int '3'
+        'direction': !!int '2'
+        'pattern': !!int '1'
+      'move_type': !!int '0'
+      'move_speed': !!int '3'
+      'move_frequency': !!int '3'
+      'move_route': !ruby/object:RPG::MoveRoute
+        'repeat': !!bool 'true'
+        'skippable': !!bool 'false'
+        'wait': !!bool 'false'
+        'list':
+        - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
+      'walk_anime': !!bool 'false'
+      'step_anime': !!bool 'true'
+      'direction_fix': !!bool 'false'
+      'through': !!bool 'false'
+      'priority_type': !!int '0'
+      'trigger': !!int '0'
+      'list':
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+  !!int '1': !ruby/object:RPG::Event
+    'id': !!int '1'
+    'name': '冒険者'
+    'x': !!int '17'
+    'y': !!int '7'
+    'pages':
     - !ruby/object:RPG::Event::Page
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch1_valid: false
-        switch2_valid: false
-        variable_valid: false
-        self_switch_valid: false
-        item_valid: false
-        actor_valid: false
-        switch1_id: 1
-        switch2_id: 1
-        variable_id: 1
-        variable_value: 0
-        self_switch_ch: A
-        item_id: 1
-        actor_id: 1
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        tile_id: 0
-        character_name: Actor1
-        character_index: 2
-        direction: 8
-        pattern: 1
-      move_type: 0
-      move_speed: 3
-      move_frequency: 2
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        wait: false
-        list:
-        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
-      walk_anime: false
-      step_anime: true
-      direction_fix: false
-      through: false
-      priority_type: 1
-      trigger: 0
-      list:
-      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-  5: !ruby/object:RPG::Event
-    id: 5
-    name: 住人
-    x: 16
-    y: 13
-    pages:
+      'condition': !ruby/object:RPG::Event::Page::Condition
+        'switch1_valid': !!bool 'false'
+        'switch2_valid': !!bool 'false'
+        'variable_valid': !!bool 'false'
+        'self_switch_valid': !!bool 'false'
+        'item_valid': !!bool 'false'
+        'actor_valid': !!bool 'false'
+        'switch1_id': !!int '1'
+        'switch2_id': !!int '1'
+        'variable_id': !!int '1'
+        'variable_value': !!int '0'
+        'self_switch_ch': 'A'
+        'item_id': !!int '1'
+        'actor_id': !!int '1'
+      'graphic': !ruby/object:RPG::Event::Page::Graphic
+        'tile_id': !!int '0'
+        'character_name': 'Actor1'
+        'character_index': !!int '2'
+        'direction': !!int '8'
+        'pattern': !!int '1'
+      'move_type': !!int '0'
+      'move_speed': !!int '3'
+      'move_frequency': !!int '2'
+      'move_route': !ruby/object:RPG::MoveRoute
+        'repeat': !!bool 'true'
+        'skippable': !!bool 'false'
+        'wait': !!bool 'false'
+        'list':
+        - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
+      'walk_anime': !!bool 'false'
+      'step_anime': !!bool 'true'
+      'direction_fix': !!bool 'false'
+      'through': !!bool 'false'
+      'priority_type': !!int '1'
+      'trigger': !!int '0'
+      'list':
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+  !!int '5': !ruby/object:RPG::Event
+    'id': !!int '5'
+    'name': '住人'
+    'x': !!int '16'
+    'y': !!int '13'
+    'pages':
     - !ruby/object:RPG::Event::Page
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch1_valid: false
-        switch2_valid: false
-        variable_valid: false
-        self_switch_valid: false
-        item_valid: false
-        actor_valid: false
-        switch1_id: 42
-        switch2_id: 1
-        variable_id: 1
-        variable_value: 0
-        self_switch_ch: A
-        item_id: 1
-        actor_id: 1
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        tile_id: 0
-        character_name: '#山頂村の人々1'
-        character_index: 5
-        direction: 2
-        pattern: 1
-      move_type: 0
-      move_speed: 3
-      move_frequency: 3
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        wait: false
-        list:
-        - !ruby/object:RPG::MoveCommand {code: 45, parameters: ['@auto_balloon =8']}
-        - !ruby/object:RPG::MoveCommand {code: 9, parameters: []}
-        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
-      walk_anime: true
-      step_anime: true
-      direction_fix: false
-      through: false
-      priority_type: 1
-      trigger: 0
-      list:
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['進入禁止エリア：1,2']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-  6: !ruby/object:RPG::Event
-    id: 6
-    name: 物乞いの青年
-    x: 8
-    y: 16
-    pages:
+      'condition': !ruby/object:RPG::Event::Page::Condition
+        'switch1_valid': !!bool 'false'
+        'switch2_valid': !!bool 'false'
+        'variable_valid': !!bool 'false'
+        'self_switch_valid': !!bool 'false'
+        'item_valid': !!bool 'false'
+        'actor_valid': !!bool 'false'
+        'switch1_id': !!int '42'
+        'switch2_id': !!int '1'
+        'variable_id': !!int '1'
+        'variable_value': !!int '0'
+        'self_switch_ch': 'A'
+        'item_id': !!int '1'
+        'actor_id': !!int '1'
+      'graphic': !ruby/object:RPG::Event::Page::Graphic
+        'tile_id': !!int '0'
+        'character_name': '#山頂村の人々1'
+        'character_index': !!int '5'
+        'direction': !!int '2'
+        'pattern': !!int '1'
+      'move_type': !!int '0'
+      'move_speed': !!int '3'
+      'move_frequency': !!int '3'
+      'move_route': !ruby/object:RPG::MoveRoute
+        'repeat': !!bool 'true'
+        'skippable': !!bool 'false'
+        'wait': !!bool 'false'
+        'list':
+        - !ruby/object:RPG::MoveCommand {'code': !!int '45', 'parameters': ['@auto_balloon =8']}
+        - !ruby/object:RPG::MoveCommand {'code': !!int '9', 'parameters': []}
+        - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
+      'walk_anime': !!bool 'true'
+      'step_anime': !!bool 'true'
+      'direction_fix': !!bool 'false'
+      'through': !!bool 'false'
+      'priority_type': !!int '1'
+      'trigger': !!int '0'
+      'list':
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['進入禁止エリア：1,2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+  !!int '6': !ruby/object:RPG::Event
+    'id': !!int '6'
+    'name': '物乞いの青年'
+    'x': !!int '8'
+    'y': !!int '16'
+    'pages':
     - !ruby/object:RPG::Event::Page
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch1_valid: false
-        switch2_valid: false
-        variable_valid: false
-        self_switch_valid: false
-        item_valid: false
-        actor_valid: false
-        switch1_id: 1
-        switch2_id: 1
-        variable_id: 1
-        variable_value: 0
-        self_switch_ch: A
-        item_id: 1
-        actor_id: 1
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        tile_id: 0
-        character_name: '#貧しい村の人々3'
-        character_index: 0
-        direction: 8
-        pattern: 1
-      move_type: 0
-      move_speed: 3
-      move_frequency: 3
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        wait: false
-        list:
-        - !ruby/object:RPG::MoveCommand {code: 45, parameters: ['@auto_balloon = 8']}
-        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
-      walk_anime: false
-      step_anime: false
-      direction_fix: false
-      through: false
-      priority_type: 1
-      trigger: 0
-      list:
-      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-  9: !ruby/object:RPG::Event
-    id: 9
-    name: 夜用武器屋
-    x: 10
-    y: 2
-    pages:
+      'condition': !ruby/object:RPG::Event::Page::Condition
+        'switch1_valid': !!bool 'false'
+        'switch2_valid': !!bool 'false'
+        'variable_valid': !!bool 'false'
+        'self_switch_valid': !!bool 'false'
+        'item_valid': !!bool 'false'
+        'actor_valid': !!bool 'false'
+        'switch1_id': !!int '1'
+        'switch2_id': !!int '1'
+        'variable_id': !!int '1'
+        'variable_value': !!int '0'
+        'self_switch_ch': 'A'
+        'item_id': !!int '1'
+        'actor_id': !!int '1'
+      'graphic': !ruby/object:RPG::Event::Page::Graphic
+        'tile_id': !!int '0'
+        'character_name': '#貧しい村の人々3'
+        'character_index': !!int '0'
+        'direction': !!int '8'
+        'pattern': !!int '1'
+      'move_type': !!int '0'
+      'move_speed': !!int '3'
+      'move_frequency': !!int '3'
+      'move_route': !ruby/object:RPG::MoveRoute
+        'repeat': !!bool 'true'
+        'skippable': !!bool 'false'
+        'wait': !!bool 'false'
+        'list':
+        - !ruby/object:RPG::MoveCommand {'code': !!int '45', 'parameters': ['@auto_balloon = 8']}
+        - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
+      'walk_anime': !!bool 'false'
+      'step_anime': !!bool 'false'
+      'direction_fix': !!bool 'false'
+      'through': !!bool 'false'
+      'priority_type': !!int '1'
+      'trigger': !!int '0'
+      'list':
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+  !!int '9': !ruby/object:RPG::Event
+    'id': !!int '9'
+    'name': '夜用武器屋'
+    'x': !!int '10'
+    'y': !!int '2'
+    'pages':
     - !ruby/object:RPG::Event::Page
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch1_valid: true
-        switch2_valid: false
-        variable_valid: false
-        self_switch_valid: false
-        item_valid: false
-        actor_valid: false
-        switch1_id: 1636
-        switch2_id: 1
-        variable_id: 61
-        variable_value: 2
-        self_switch_ch: A
-        item_id: 1
-        actor_id: 1
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        tile_id: 0
-        character_name: ''
-        character_index: 0
-        direction: 2
-        pattern: 1
-      move_type: 0
-      move_speed: 3
-      move_frequency: 3
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        wait: false
-        list:
-        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
-      walk_anime: false
-      step_anime: false
-      direction_fix: true
-      through: false
-      priority_type: 1
-      trigger: 3
-      list:
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [回想・商店街２-２。武器屋その２。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [33]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [1940]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [イベント状況に合わせて立ち絵変更。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: c 街19(街の中央広場)170919_125bpm, volume: 70, pitch: 100}]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [1]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 4, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「まだ欲しい物があるなら相談に乗るよ♪]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　このミスリル製のポールアックスなんて]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　お部屋の飾りに丁度良くない？」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor5, 7, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「そんな長くて物騒なのはちょっと」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 4, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「俺のチンポの方がいいってか？」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [actor3, 4, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「もう……\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [1]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 211, p: [0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [53, 53, 0, 0, 1]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [武器屋ホコグラ消去。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [シルフィー透明化。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: c 探索15(セキュリティホール)180110_160bpm_3loop, volume: 65, pitch: 100}]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [100]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 213, p: [10, 4, true]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [店に誰も居なく、シルフィーも見えない。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [奥で何事か起こっていることを示すハートのフキダシを表示する。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [53]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [1, '#バック2体9-1', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [6, '#バック2男1', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [1, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [6, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [下着差分が面倒なので下着無しで。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あああ～\I[122]　来たぁ\I[122]　']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　あうっ、あっ\I[122]　んぐっ、んっ、おう\I[122]　おほっ\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「へへへ\I[122]　卑しいメス穴が俺のチンポを']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　美味そうにガッツリ咥え込んでるぞ♪」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーの腰をつかんでガチガチに勃起したペニスを]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [容赦なく子宮めがけて打ち込んでいく。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [ニチャニチャと淫肉が搔き回される音を静かに響かせながら]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [愛液の飛沫が二人の肌に淫らな跡をつけていった。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「うぉぉ……このアツアツでヌチャヌチャしたエッチな肉が]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　チンポに絡みついてくる感触ときたら♪」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あんっ!　んっ、うあっ\I[122]　あっ、ああっ、ふぐうっ\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [汁気たっぷりの肉穴を拡張されながら子宮口をごりごりと小突かれ、]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [その度にシルフィーの肢体が弓なりに反りかえる。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [53]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「今回も膣に出しちゃっていいのかなぁ？」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [2, '#バック2体13', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [1, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [2, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「あはっ\I[122]　出してっ\I[122]　いっぱい射精して\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [自然と口をついて出る恥知らずなセリフに背筋が震える。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [今は演技でもなんでもなく、ただ男のすべてを受け入れることを]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーは欲していた。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「すっかり俺のチンポの味を覚えたようだな♪」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [3, '#バック2体10-1', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [2, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [3, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「ふふ……そ、そうかも……あんっ\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [52]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [男は上機嫌で抽送を早めていく。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーの膣肉がきゅうきゅうとペニスを甘く搾り上げて]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [膣内奥深くへの射精を促していた。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [3, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [1, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [正面向きに戻す。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「はあっ、ああ……んおっ、おおおっ\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィーは壁に手をついて踏ん張り、]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [力強く男に向かって腰を突き上げる。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [男の方もシルフィーの動きに合わせて]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [リズミカルにペニスを抽送していく。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [すでに何度も交尾を繰り返して]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [短い期間にもかかわらず互いの身体を知り尽くした]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [淫らな動きだった。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「うぐっ、ううぅ……!」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「ひいっ\I[122]　来る\I[122]　また膣にザーメン来ちゃうっ\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [64]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [20, '#バック2膣3', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [20, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, true]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [63]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [5, '#バック2射精1', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [5, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, true]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [射精差分と膣カットインを別々に。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「はぁ……はぁぁ\I[122]　暖かい……\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [熱くて硬い肉棒がドクドクと脈打ちながら]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [濃厚な精子の塊を子宮口めがけて吐き出し続ける。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [4, '#バック2体13-1', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 231, p: [30, '#バック2ベロチュー2', 0, 0, 0, 0, 100, 100, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [1, ! '', 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [4, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 232, p: [30, ! '', 0, 0, 0, 0, 100, 100, 255, 0, 60, true]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [身体交換。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [ベロチューを時間差で表示。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: 粘液系08(長), pitch: 100, volume: 80}]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['「んふ……ちゅ\I[122]　ぴちゃ\I[122]']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　……本当は、お金をもらうところなんですからね……」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [武器屋]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「ええ？]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [　こっちがお前を喜ばせてやってると思ってたんだけどなぁ」]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [シルフィー]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [「む……じゃあ、お互いさまということで……]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['　あっ、やぁん\I[122]　ちゅぷ\I[122]　れろん\I[122]」']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [とりとめない会話を交わしながら二人は飽きもせずに]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [互いの舌をむさぼり合う。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [そうやって呼吸を整え、身体をしばし休めてから]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [再び交尾を再開するのだった。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [以下、回想部屋に戻る実行内容。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 221, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 251, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 355, p: [screen.clear_pictures]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 122, p: [53, 53, 0, 0, 0]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [25]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [回想を見始めたときにボテ腹だったか、夜だったかの判定。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [元の状態に戻る。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 117, p: [23]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [重要・移動先の自動実行条件をオフ。そうしないと繰り返せない。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　　　オフだけはコモンイベントにまとめて消し忘れを防止する。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [30]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 38, 23, 7, 8, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 214, p: []}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-  10: !ruby/object:RPG::Event
-    id: 10
-    name: ハートマーク
-    x: 12
-    y: 4
-    pages:
+      'condition': !ruby/object:RPG::Event::Page::Condition
+        'switch1_valid': !!bool 'true'
+        'switch2_valid': !!bool 'false'
+        'variable_valid': !!bool 'false'
+        'self_switch_valid': !!bool 'false'
+        'item_valid': !!bool 'false'
+        'actor_valid': !!bool 'false'
+        'switch1_id': !!int '1636'
+        'switch2_id': !!int '1'
+        'variable_id': !!int '61'
+        'variable_value': !!int '2'
+        'self_switch_ch': 'A'
+        'item_id': !!int '1'
+        'actor_id': !!int '1'
+      'graphic': !ruby/object:RPG::Event::Page::Graphic
+        'tile_id': !!int '0'
+        'character_name': ''
+        'character_index': !!int '0'
+        'direction': !!int '2'
+        'pattern': !!int '1'
+      'move_type': !!int '0'
+      'move_speed': !!int '3'
+      'move_frequency': !!int '3'
+      'move_route': !ruby/object:RPG::MoveRoute
+        'repeat': !!bool 'true'
+        'skippable': !!bool 'false'
+        'wait': !!bool 'false'
+        'list':
+        - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
+      'walk_anime': !!bool 'false'
+      'step_anime': !!bool 'false'
+      'direction_fix': !!bool 'true'
+      'through': !!bool 'false'
+      'priority_type': !!int '1'
+      'trigger': !!int '3'
+      'list':
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['回想・商店街２-２。武器屋その２。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '33']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '1940']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['イベント状況に合わせて立ち絵変更。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '241', 'p': [!ruby/object:RPG::BGM {'name': 'c 街19(街の中央広場)170919_125bpm', 'volume': !!int '70', 'pitch': !!int '100'}]}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '222', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '1']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '4', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "If you still have something you want, I''m here
+
+            to help♪ How about this mithril-made poleaxe? It would be
+
+            perfect as a decoration for your room, don''t you think?"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['actor5', !!int '7', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Something long and dangerous like that is a bit too
+
+            much."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '4', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Would you prefer my penis instead?"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['actor3', !!int '4', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Enough already...\I[122]"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '30']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '242', 'p': [!!int '1']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '221', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '30']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '211', 'p': [!!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '122', 'p': [!!int '53', !!int '53', !!int '0', !!int '0', !!int '1']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['武器屋ホコグラ消去。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['シルフィー透明化。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '30']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '241', 'p': [!ruby/object:RPG::BGM {'name': 'c 探索15(セキュリティホール)180110_160bpm_3loop', 'volume': !!int '65', 'pitch': !!int '100'}]}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '222', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '100']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '213', 'p': [!!int '10', !!int '4', !!bool 'true']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['店に誰も居なく、シルフィーも見えない。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['奥で何事か起こっていることを示すハートのフキダシを表示する。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '53']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '1', '#バック2体9-1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '6', '#バック2男1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '1', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '6', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['下着差分が面倒なので下着無しで。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Aaah~ \I[122] Here it comes \I[122] Ahh, ah \I[122]
+
+            Nng, nn, oh \I[122] Oho \I[122]"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Hehehe\I[122] This filthy female hole is
+
+            greedily devouring my penis♪"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy''s waist is grabbed and a rock-hard penis is
+
+            mercilessly thrust into her uterus. The sound of squelching
+
+            flesh echoes quietly as the splashes of love juices leave
+
+            lewd marks on their skin.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Ohh... the sensation of this hot and sticky
+
+            naughty flesh clinging to my penis is just amazing♪"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Ah! Nn, ugh \I[122] Ah, aah, fuuuh \I[122]"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy''s body arches in a bow shape every time her juicy
+
+            meat hole is expanded and her cervix is relentlessly poked.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '251', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '53']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Is it okay if I cum inside your vagina again
+
+            this time?"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '2', '#バック2体13', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '1', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '2', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Ahaha, release it! Ejaculate a lot!"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The spine trembles at the shameless lines that naturally
+
+            come out of the mouth. Right now, Sylphy desires nothing
+
+            more than to accept everything about the man, without any
+
+            acting or pretense.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Seems like you''ve completely remembered the
+
+            taste of my penis♪"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '3', '#バック2体10-1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '2', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '3', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Hehe... Y-Yes, that might be... Ahh"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '251', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '52']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The man speeds up his thrusts in high spirits. Sylphy''s
+
+            vaginal flesh sweetly squeezes the penis, urging him to
+
+            ejaculate deep inside her.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '3', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '1', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['正面向きに戻す。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Haa, aah... Nn, ohh, oohh..."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy braces herself against the wall and forcefully
+
+            thrusts her hips towards the man.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The man also rhythmically thrusts his penis in sync with
+
+            Sylphy''s movements.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['We have already repeated copulation many times and despite
+
+            the short period, we have become intimately familiar with
+
+            each other''s bodies. It was a lewd movement.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Ugh, ughhh...!"']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Hii... It''s coming... The semen is coming inside my
+
+            vagina again..."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '251', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '64']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '20', '#バック2膣3', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '20', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '60', !!bool 'true']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '60']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '63']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '5', '#バック2射精1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '5', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '60', !!bool 'true']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['射精差分と膣カットインを別々に。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Haa... haaa... Warm..."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['The hot and hard meat rod continues to pulsate as it spews
+
+            out a thick mass of concentrated semen towards the entrance
+
+            of the uterus.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '4', '#バック2体13-1', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '231', 'p': [!!int '30', '#バック2ベロチュー2', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '1', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '0', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '4', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '30', !!bool 'false']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '232', 'p': [!!int '30', !!null 'null', !!int '0', !!int '0', !!int '0', !!int '0', !!int '100', !!int '100', !!int '255', !!int '0', !!int '60', !!bool 'true']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['身体交換。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['ベロチューを時間差で表示。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '250', 'p': [!ruby/object:RPG::SE {'name': '粘液系08(長)', 'pitch': !!int '100', 'volume': !!int '80'}]}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Nfu... chu... picha... Actually, I''m supposed to
+
+            receive money for this..."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Weapon Shop: "Huh? I thought I was the one making you
+
+            happy."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['Sylphy: "Hmm... Well then, let''s call it even... Ahh,
+
+            yaaan... chup... slurp..."']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['While exchanging aimless conversation, the two of them
+
+            greedily devour each other''s tongues without getting tired.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '101', 'p': ['', !!int '0', !!int '0', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '401', 'p': ['After taking a moment to catch their breath and rest their
+
+            bodies, they resumed copulation once again.']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '30']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '242', 'p': [!!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['以下、回想部屋に戻る実行内容。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '221', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '251', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '355', 'p': ['screen.clear_pictures']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '122', 'p': [!!int '53', !!int '53', !!int '0', !!int '0', !!int '0']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '25']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['回想を見始めたときにボテ腹だったか、夜だったかの判定。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['元の状態に戻る。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '117', 'p': [!!int '23']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['重要・移動先の自動実行条件をオフ。そうしないと繰り返せない。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　　　オフだけはコモンイベントにまとめて消し忘れを防止する。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '230', 'p': [!!int '30']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '201', 'p': [!!int '0', !!int '38', !!int '23', !!int '7', !!int '8', !!int '2']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '222', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '214', 'p': []}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+  !!int '10': !ruby/object:RPG::Event
+    'id': !!int '10'
+    'name': 'ハートマーク'
+    'x': !!int '12'
+    'y': !!int '4'
+    'pages':
     - !ruby/object:RPG::Event::Page
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch1_valid: false
-        switch2_valid: false
-        variable_valid: false
-        self_switch_valid: false
-        item_valid: false
-        actor_valid: false
-        switch1_id: 1
-        switch2_id: 1
-        variable_id: 1
-        variable_value: 0
-        self_switch_ch: A
-        item_id: 1
-        actor_id: 1
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        tile_id: 0
-        character_name: ''
-        character_index: 0
-        direction: 2
-        pattern: 1
-      move_type: 0
-      move_speed: 3
-      move_frequency: 3
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        wait: false
-        list:
-        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
-      walk_anime: false
-      step_anime: true
-      direction_fix: true
-      through: false
-      priority_type: 0
-      trigger: 0
-      list:
-      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [武器屋エッチイベント開始後、]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [最初にハートマークを表示させるために設置。]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [　]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-  7: !ruby/object:RPG::Event
-    id: 7
-    name: 老人
-    x: 2
-    y: 10
-    pages:
+      'condition': !ruby/object:RPG::Event::Page::Condition
+        'switch1_valid': !!bool 'false'
+        'switch2_valid': !!bool 'false'
+        'variable_valid': !!bool 'false'
+        'self_switch_valid': !!bool 'false'
+        'item_valid': !!bool 'false'
+        'actor_valid': !!bool 'false'
+        'switch1_id': !!int '1'
+        'switch2_id': !!int '1'
+        'variable_id': !!int '1'
+        'variable_value': !!int '0'
+        'self_switch_ch': 'A'
+        'item_id': !!int '1'
+        'actor_id': !!int '1'
+      'graphic': !ruby/object:RPG::Event::Page::Graphic
+        'tile_id': !!int '0'
+        'character_name': ''
+        'character_index': !!int '0'
+        'direction': !!int '2'
+        'pattern': !!int '1'
+      'move_type': !!int '0'
+      'move_speed': !!int '3'
+      'move_frequency': !!int '3'
+      'move_route': !ruby/object:RPG::MoveRoute
+        'repeat': !!bool 'true'
+        'skippable': !!bool 'false'
+        'wait': !!bool 'false'
+        'list':
+        - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
+      'walk_anime': !!bool 'false'
+      'step_anime': !!bool 'true'
+      'direction_fix': !!bool 'true'
+      'through': !!bool 'false'
+      'priority_type': !!int '0'
+      'trigger': !!int '0'
+      'list':
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '108', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['武器屋エッチイベント開始後、']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['最初にハートマークを表示させるために設置。']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '408', 'p': ['　']}
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+  !!int '7': !ruby/object:RPG::Event
+    'id': !!int '7'
+    'name': '老人'
+    'x': !!int '2'
+    'y': !!int '10'
+    'pages':
     - !ruby/object:RPG::Event::Page
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch1_valid: false
-        switch2_valid: false
-        variable_valid: false
-        self_switch_valid: false
-        item_valid: false
-        actor_valid: false
-        switch1_id: 1
-        switch2_id: 1
-        variable_id: 1
-        variable_value: 0
-        self_switch_ch: A
-        item_id: 1
-        actor_id: 1
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        tile_id: 0
-        character_name: '#山頂村の人々1'
-        character_index: 0
-        direction: 8
-        pattern: 1
-      move_type: 0
-      move_speed: 3
-      move_frequency: 2
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        wait: false
-        list:
-        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
-      walk_anime: false
-      step_anime: true
-      direction_fix: false
-      through: false
-      priority_type: 1
-      trigger: 0
-      list:
-      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-  8: !ruby/object:RPG::Event
-    id: 8
-    name: 棚
-    x: 3
-    y: 7
-    pages:
+      'condition': !ruby/object:RPG::Event::Page::Condition
+        'switch1_valid': !!bool 'false'
+        'switch2_valid': !!bool 'false'
+        'variable_valid': !!bool 'false'
+        'self_switch_valid': !!bool 'false'
+        'item_valid': !!bool 'false'
+        'actor_valid': !!bool 'false'
+        'switch1_id': !!int '1'
+        'switch2_id': !!int '1'
+        'variable_id': !!int '1'
+        'variable_value': !!int '0'
+        'self_switch_ch': 'A'
+        'item_id': !!int '1'
+        'actor_id': !!int '1'
+      'graphic': !ruby/object:RPG::Event::Page::Graphic
+        'tile_id': !!int '0'
+        'character_name': '#山頂村の人々1'
+        'character_index': !!int '0'
+        'direction': !!int '8'
+        'pattern': !!int '1'
+      'move_type': !!int '0'
+      'move_speed': !!int '3'
+      'move_frequency': !!int '2'
+      'move_route': !ruby/object:RPG::MoveRoute
+        'repeat': !!bool 'true'
+        'skippable': !!bool 'false'
+        'wait': !!bool 'false'
+        'list':
+        - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
+      'walk_anime': !!bool 'false'
+      'step_anime': !!bool 'true'
+      'direction_fix': !!bool 'false'
+      'through': !!bool 'false'
+      'priority_type': !!int '1'
+      'trigger': !!int '0'
+      'list':
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+  !!int '8': !ruby/object:RPG::Event
+    'id': !!int '8'
+    'name': '棚'
+    'x': !!int '3'
+    'y': !!int '7'
+    'pages':
     - !ruby/object:RPG::Event::Page
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch1_valid: false
-        switch2_valid: false
-        variable_valid: false
-        self_switch_valid: false
-        item_valid: false
-        actor_valid: false
-        switch1_id: 19
-        switch2_id: 1
-        variable_id: 1
-        variable_value: 0
-        self_switch_ch: A
-        item_id: 1
-        actor_id: 1
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        tile_id: 950
-        character_name: ''
-        character_index: 0
-        direction: 2
-        pattern: 0
-      move_type: 0
-      move_speed: 3
-      move_frequency: 3
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        wait: false
-        list:
-        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
-      walk_anime: false
-      step_anime: false
-      direction_fix: true
-      through: false
-      priority_type: 0
-      trigger: 0
-      list:
-      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-  11: !ruby/object:RPG::Event
-    id: 11
-    name: 棚
-    x: 1
-    y: 7
-    pages:
+      'condition': !ruby/object:RPG::Event::Page::Condition
+        'switch1_valid': !!bool 'false'
+        'switch2_valid': !!bool 'false'
+        'variable_valid': !!bool 'false'
+        'self_switch_valid': !!bool 'false'
+        'item_valid': !!bool 'false'
+        'actor_valid': !!bool 'false'
+        'switch1_id': !!int '19'
+        'switch2_id': !!int '1'
+        'variable_id': !!int '1'
+        'variable_value': !!int '0'
+        'self_switch_ch': 'A'
+        'item_id': !!int '1'
+        'actor_id': !!int '1'
+      'graphic': !ruby/object:RPG::Event::Page::Graphic
+        'tile_id': !!int '950'
+        'character_name': ''
+        'character_index': !!int '0'
+        'direction': !!int '2'
+        'pattern': !!int '0'
+      'move_type': !!int '0'
+      'move_speed': !!int '3'
+      'move_frequency': !!int '3'
+      'move_route': !ruby/object:RPG::MoveRoute
+        'repeat': !!bool 'true'
+        'skippable': !!bool 'false'
+        'wait': !!bool 'false'
+        'list':
+        - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
+      'walk_anime': !!bool 'false'
+      'step_anime': !!bool 'false'
+      'direction_fix': !!bool 'true'
+      'through': !!bool 'false'
+      'priority_type': !!int '0'
+      'trigger': !!int '0'
+      'list':
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+  !!int '11': !ruby/object:RPG::Event
+    'id': !!int '11'
+    'name': '棚'
+    'x': !!int '1'
+    'y': !!int '7'
+    'pages':
     - !ruby/object:RPG::Event::Page
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch1_valid: false
-        switch2_valid: false
-        variable_valid: false
-        self_switch_valid: false
-        item_valid: false
-        actor_valid: false
-        switch1_id: 19
-        switch2_id: 1
-        variable_id: 1
-        variable_value: 0
-        self_switch_ch: A
-        item_id: 1
-        actor_id: 1
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        tile_id: 975
-        character_name: ''
-        character_index: 0
-        direction: 2
-        pattern: 0
-      move_type: 0
-      move_speed: 3
-      move_frequency: 3
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        wait: false
-        list:
-        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
-      walk_anime: false
-      step_anime: false
-      direction_fix: true
-      through: false
-      priority_type: 0
-      trigger: 0
-      list:
-      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
-parallax_sx: 0
-bgm: !ruby/object:RPG::BGM {name: '', volume: 100, pitch: 100}
-tileset_id: 149
-encounter_step: 30
-width: 20
-data: !ruby/object:Table
-  dim: 3
-  x: 20
-  y: 20
-  z: 4
-  data:
-  - 17ac 17ac 17ac 17ac 17b6 1020 1010 1010 1010 1028 17b8 17ac 17ac 17ac 17ac 17ac 17ac 17ac 17ac 17ac
-  - 18e2 18e2 18e2 18e2 18e6 1020 1010 1010 1010 1028 18e3 18e2 18e2 18e2 18e2 18e2 18e2 18e2 18e2 18e2
-  - 18e8 18e8 18e8 18e8 18ec 1020 1010 1010 1010 1028 18e1 18e0 18e0 18e0 18e0 18e0 18e0 18e0 18e0 18e0
-  - 1102 1102 1102 1102 1106 1020 1010 1010 1010 1028 18e1 18e0 18e0 18e0 18e0 18e0 18e0 18e0 18e0 18e0
-  - 1100 1100 1100 1100 1104 1020 1010 1010 1010 1028 18e9 18e8 18e8 18e8 18e8 18e8 18e8 18e8 18e8 18e8
-  - 1108 1108 1108 1108 110c 1020 1010 1010 1010 1028 0fdb 0fd1 0fd1 0fd1 0fd1 0fd1 0fd1 0fd1 0fd1 0fd1
-  - 12e2 12e2 12e2 12e2 12e6 1020 1010 1010 1010 1012 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024
-  - 12e0 12e0 12e0 12e0 12e4 1020 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010
-  - 12e8 12e8 12e8 12e8 12ec 1020 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010
-  - 1024 1024 1024 1024 1024 1011 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010
-  - 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010
-  - 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010
-  - 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c
-  - 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4
-  - 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc
-  - 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024
-  - 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c
-  - 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4
-  - 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790
-  - 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 006f 0000 0000 0000 006f 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0077 0000 0000 0000 0077 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 023f 0000 0000 0000 0000 007f 0000 0000 0000 007f 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0247 020e 020f 0000 0000 0000 0000 0000 0000 0000 0000 00e5 00e6 00e7 0000 00e0 00e1 00e2 0000 0000
-  - 020f 0216 0217 0000 0000 0000 0000 0000 0000 0000 0000 00ed 00ee 00ef 0000 00e8 00e9 00ea 0000 0393
-  - 020f 021e 021f 0000 0000 0000 0000 0000 0000 0000 0158 00f5 00f6 00f7 0158 00f0 00f1 00f2 0158 0393
-  - 0000 0320 0000 0320 0000 0000 0000 0000 0000 0000 0000 00fd 00fe 00ff 0000 00f8 00f9 00fa 0000 039b
-  - 03ce 0328 03b5 0328 03b7 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 03d6 03d7 03bd 03be 03bf 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 03de 03df 03c5 03c6 03c7 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 006f 0000 0000 0000 0000 0000 006f 0000 0000 0000 0000 0000 006f 0000 0000 0000 0000 0000 006f
-  - 0000 0077 0000 0000 0000 0000 0000 0077 0000 0000 0000 0000 0000 0077 0000 0000 0000 0000 0000 0077
-  - 0158 007f 0158 0158 0158 0158 0158 007f 0158 0158 0158 0158 0158 007f 0158 0158 0158 0158 0158 007f
-  - 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158
-  - 0000 0000 0000 0068 0069 0000 0000 0000 0000 0000 0000 006a 006b 0000 0072 0073 0000 0000 0000 0000
-  - 0000 0000 0000 0070 0071 0000 03aa 0381 0000 0000 0000 0070 0071 0000 007a 007b 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-bgs: !ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}
-parallax_loop_y: false
-autoplay_bgm: false
-encounter_list: []
-autoplay_bgs: false
-parallax_show: false
-scroll_type: 0
-parallax_loop_x: false
-disable_dashing: false
-parallax_sy: 0
-display_name: ''
-specify_battleback: false
-note: ''
-battleback1_name: ''
-battleback2_name: ''
+      'condition': !ruby/object:RPG::Event::Page::Condition
+        'switch1_valid': !!bool 'false'
+        'switch2_valid': !!bool 'false'
+        'variable_valid': !!bool 'false'
+        'self_switch_valid': !!bool 'false'
+        'item_valid': !!bool 'false'
+        'actor_valid': !!bool 'false'
+        'switch1_id': !!int '19'
+        'switch2_id': !!int '1'
+        'variable_id': !!int '1'
+        'variable_value': !!int '0'
+        'self_switch_ch': 'A'
+        'item_id': !!int '1'
+        'actor_id': !!int '1'
+      'graphic': !ruby/object:RPG::Event::Page::Graphic
+        'tile_id': !!int '975'
+        'character_name': ''
+        'character_index': !!int '0'
+        'direction': !!int '2'
+        'pattern': !!int '0'
+      'move_type': !!int '0'
+      'move_speed': !!int '3'
+      'move_frequency': !!int '3'
+      'move_route': !ruby/object:RPG::MoveRoute
+        'repeat': !!bool 'true'
+        'skippable': !!bool 'false'
+        'wait': !!bool 'false'
+        'list':
+        - !ruby/object:RPG::MoveCommand {'code': !!int '0', 'parameters': []}
+      'walk_anime': !!bool 'false'
+      'step_anime': !!bool 'false'
+      'direction_fix': !!bool 'true'
+      'through': !!bool 'false'
+      'priority_type': !!int '0'
+      'trigger': !!int '0'
+      'list':
+      - !ruby/object:RPG::EventCommand {'i': !!int '0', 'c': !!int '0', 'p': []}
+'parallax_sx': !!int '0'
+'bgm': !ruby/object:RPG::BGM {'name': '', 'volume': !!int '100', 'pitch': !!int '100'}
+'tileset_id': !!int '149'
+'encounter_step': !!int '30'
+'width': !!int '20'
+'data': !ruby/object:Table
+  'dim': !!int '3'
+  'x': !!int '20'
+  'y': !!int '20'
+  'z': !!int '4'
+  'data':
+  - '17ac 17ac 17ac 17ac 17b6 1020 1010 1010 1010 1028 17b8 17ac 17ac 17ac 17ac 17ac 17ac 17ac 17ac 17ac'
+  - '18e2 18e2 18e2 18e2 18e6 1020 1010 1010 1010 1028 18e3 18e2 18e2 18e2 18e2 18e2 18e2 18e2 18e2 18e2'
+  - '18e8 18e8 18e8 18e8 18ec 1020 1010 1010 1010 1028 18e1 18e0 18e0 18e0 18e0 18e0 18e0 18e0 18e0 18e0'
+  - '1102 1102 1102 1102 1106 1020 1010 1010 1010 1028 18e1 18e0 18e0 18e0 18e0 18e0 18e0 18e0 18e0 18e0'
+  - '1100 1100 1100 1100 1104 1020 1010 1010 1010 1028 18e9 18e8 18e8 18e8 18e8 18e8 18e8 18e8 18e8 18e8'
+  - '1108 1108 1108 1108 110c 1020 1010 1010 1010 1028 0fdb 0fd1 0fd1 0fd1 0fd1 0fd1 0fd1 0fd1 0fd1 0fd1'
+  - '12e2 12e2 12e2 12e2 12e6 1020 1010 1010 1010 1012 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024'
+  - '12e0 12e0 12e0 12e0 12e4 1020 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010'
+  - '12e8 12e8 12e8 12e8 12ec 1020 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010'
+  - '1024 1024 1024 1024 1024 1011 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010'
+  - '1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010'
+  - '1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010 1010'
+  - '102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c'
+  - '0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4 0fc4'
+  - '0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc 0fcc'
+  - '1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024 1024'
+  - '102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c 102c'
+  - '17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4 17a4'
+  - '1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790'
+  - '1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790 1790'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 006f 0000 0000 0000 006f 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0077 0000 0000 0000 0077 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '023f 0000 0000 0000 0000 007f 0000 0000 0000 007f 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0247 020e 020f 0000 0000 0000 0000 0000 0000 0000 0000 00e5 00e6 00e7 0000 00e0 00e1 00e2 0000 0000'
+  - '020f 0216 0217 0000 0000 0000 0000 0000 0000 0000 0000 00ed 00ee 00ef 0000 00e8 00e9 00ea 0000 0393'
+  - '020f 021e 021f 0000 0000 0000 0000 0000 0000 0000 0158 00f5 00f6 00f7 0158 00f0 00f1 00f2 0158 0393'
+  - '0000 0320 0000 0320 0000 0000 0000 0000 0000 0000 0000 00fd 00fe 00ff 0000 00f8 00f9 00fa 0000 039b'
+  - '03ce 0328 03b5 0328 03b7 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '03d6 03d7 03bd 03be 03bf 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '03de 03df 03c5 03c6 03c7 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 006f 0000 0000 0000 0000 0000 006f 0000 0000 0000 0000 0000 006f 0000 0000 0000 0000 0000 006f'
+  - '0000 0077 0000 0000 0000 0000 0000 0077 0000 0000 0000 0000 0000 0077 0000 0000 0000 0000 0000 0077'
+  - '0158 007f 0158 0158 0158 0158 0158 007f 0158 0158 0158 0158 0158 007f 0158 0158 0158 0158 0158 007f'
+  - '0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158 0158'
+  - '0000 0000 0000 0068 0069 0000 0000 0000 0000 0000 0000 006a 006b 0000 0072 0073 0000 0000 0000 0000'
+  - '0000 0000 0000 0070 0071 0000 03aa 0381 0000 0000 0000 0070 0071 0000 007a 007b 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0005 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+  - '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000'
+'bgs': !ruby/object:RPG::BGS {'name': '', 'volume': !!int '80', 'pitch': !!int '100'}
+'parallax_loop_y': !!bool 'false'
+'autoplay_bgm': !!bool 'false'
+'encounter_list': []
+'autoplay_bgs': !!bool 'false'
+'parallax_show': !!bool 'false'
+'scroll_type': !!int '0'
+'parallax_loop_x': !!bool 'false'
+'disable_dashing': !!bool 'false'
+'parallax_sy': !!int '0'
+'display_name': ''
+'specify_battleback': !!bool 'false'
+'note': ''
+'battleback1_name': ''
+'battleback2_name': ''
