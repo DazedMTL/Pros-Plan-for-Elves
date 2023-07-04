@@ -43,14 +43,14 @@ module HZM_VXA
     # 　false …… 表示しない
     TITLE_FLAG = true
     # タイトル画面に表示する項目名
-    TITLE_NAME        = "音量設定"
+    TITLE_NAME        = "Volume"
     
     # ● メニュー画面に音量調整を表示するか？
     # 　true  …… 表示する
     # 　false …… 表示しない
     MENU_FLAG = true
     # メニュー画面に表示する項目名
-    MENU_NAME        = "音量設定"
+    MENU_NAME        = "Volume"
     
     # ● 音量変更項目のタイプ
     # 　0 …… BGM/BGS/SE/MEすべて一括で設定
@@ -58,26 +58,26 @@ module HZM_VXA
     #   2 …… BGM/BGS/SE/ME の4種類それぞれで設定
     TYPE = 2
     
-    # ● 音量設定画面の項目名
-    CONFIG_ALL_NAME  = "音量"        # タイプ「0」を選択時に使用されます
+    # ● Volume画面の項目名
+    CONFIG_ALL_NAME  = "Master"        # タイプ「0」を選択時に使用されます
     CONFIG_BGM_NAME  = "BGM"         # タイプ「1」「2」を選択時に使用されます
     CONFIG_BGS_NAME  = "BGS"         # タイプ「2」を選択時に使用されます
     CONFIG_SE_NAME   = "SE"          # タイプ「1」「2」を選択時に使用されます
     CONFIG_ME_NAME   = "ME"          # タイプ「2」を選択時に使用されます
-    CONFIG_EXIT_NAME = "決定"
+    CONFIG_EXIT_NAME = "Confirm"
     
     # ● 音量変更の変動量
     ADD_VOL_NORMAL =  5              # 左右キーの変動量
     ADD_VOL_HIGH   = 25              # LRキーの変動量
     
-    # ● 音量設定画面のウィンドウ幅
+    # ● Volume画面のウィンドウ幅
     WINDOW_WIDTH   = 200
     
     # ● 音量変更画面の音量ゲージの色
     COLOR1 = Color.new(255, 255, 255)
     COLOR2 = Color.new( 64,  64, 255)
     
-    # ● 音量設定を保存する
+    # ● Volumeを保存する
     #    Game.ini内に音量情報を保存することで
     #    次回起動時にも音量を反映できるようになります
     #    true  …… 保存する
@@ -93,25 +93,25 @@ end
  
 module Audio
   #-----------------------------------------------------------------------------
-  # ● 音量設定：BGM（独自）
+  # ● Volume：BGM（独自）
   #-----------------------------------------------------------------------------
   def self.bgm_vol=(vol)
     @hzm_vxa_audioVol_bgm = self.vol_range(vol)
   end
   #-----------------------------------------------------------------------------
-  # ● 音量設定：BGS（独自）
+  # ● Volume：BGS（独自）
   #-----------------------------------------------------------------------------
   def self.bgs_vol=(vol)
     @hzm_vxa_audioVol_bgs = self.vol_range(vol)
   end
   #-----------------------------------------------------------------------------
-  # ● 音量設定：SE（独自）
+  # ● Volume：SE（独自）
   #-----------------------------------------------------------------------------
   def self.se_vol=(vol)
     @hzm_vxa_audioVol_se = self.vol_range(vol)
   end
   #-----------------------------------------------------------------------------
-  # ● 音量設定：ME（独自）
+  # ● Volume：ME（独自）
   #-----------------------------------------------------------------------------
   def self.me_vol=(vol)
     @hzm_vxa_audioVol_me = self.vol_range(vol)
@@ -201,7 +201,7 @@ if HZM_VXA::AudioVol::TITLE_FLAG
       #    タイトル画面のメニュー項目を再定義ではなくエイリアスで
       #    追加するようになります．
       #    他のタイトルメニュー拡張系のスクリプトとの競合は起きにくくなりますが，
-      #    副作用として，シャットダウンの下に音量設定の項目が追加されます．
+      #    副作用として，シャットダウンの下にVolumeの項目が追加されます．
       #    必要に合わせて……(・ｘ・)
       #---------------------------------------------------------------------------
       # ● コマンドリストの作成（再定義）
@@ -264,7 +264,7 @@ if HZM_VXA::AudioVol::MENU_FLAG
       @command_window.set_handler(:hzm_vxa_audioVol, method(:hzm_vxa_audioVol_command_config))
     end
     #---------------------------------------------------------------------------
-    # ● 音量設定画面呼び出し
+    # ● Volume画面呼び出し
     #---------------------------------------------------------------------------
     def hzm_vxa_audioVol_command_config
       SceneManager.call(HZM_VXA::AudioVol::Scene_VolConfig)
@@ -442,7 +442,7 @@ module HZM_VXA
         @command_window = Window_VolConfig.new
         @command_window.viewport = @viewport
         @command_window.set_handler(:cancel,   method(:return_scene))
-        @help_window.set_text("ゲームの音量の調整ができます。（0：無音～100:最大）\n←　音量を下げる　／　音量を上げる　→")
+        @help_window.set_text("You can adjust the game volume. (0: Mute ~ 100: Max)\n← Decrease volume / Increase volume →")
       end
       #-------------------------------------------------------------------------
       # ● 終了処理
