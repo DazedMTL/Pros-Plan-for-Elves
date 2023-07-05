@@ -23,85 +23,85 @@ module DescriptionChange
   [
   1,
   146,
-  "本当に娼婦になってしまったエルフ帝国の皇女。",
-  "当然のことながらその出自はごく一部の者にしか知られていない。"
+  "The princess of the Elven Empire who has truly become a prostitute.",
+  "Naturally, her true identity is only known to a select few"
   ],
   #配列３個目
   [
   1,
   147,
-  "処女オークションで落札されて人間の男に中出しされた皇女。",
-  "これでようやくプロの娼婦への一歩を踏み出したことになる。"
+  "The princess was purchased in a virgin auction and creampied by a human man.",
+  "With this, she finally takes a step towards becoming a professional prostitute."
   ],
   #配列４個目
   [
   1,
   148,
-  "経験を積んでその界隈ではそれなりに名の知られた娼婦となった。",
-  "人間とセックスすることへの抵抗も日に日に無くなりつつある。" 
+  "Having gained experience, she has become a somewhat well-known prostitute in the industry.",
+  "Her resistance to having sex with humans is gradually diminishing." 
   ],
   #配列５個目
   [
   1,
   152,
-  "多くの男たちに抱かれることで本物の娼婦へと成長した。",
-  "妊娠しづらいのをいいことに中出しセックスを好むようになった。" 
+  "By being embraced by many men, she has grown into a true prostitute.",
+  "Taking advantage of the difficulty of getting pregnant, she has come to enjoy creampie sex." 
   ],
   #配列６個目
   [
   1,
   153,
-  "アナル調教の過程でシルフィーは妊娠への渇望に気がついた。",
-  "汚されるほど悦ぶ淫らなメス豚として完成しつつある。" 
+  "During the process of anal training, Sylphy realized her craving for pregnancy.",
+  "She is gradually becoming a depraved female pig who delights in being defiled." 
   ],
   #配列７個目
   [
   1,
   154,
-  "ついに人間の子供を妊娠してしまった。",
-  "膨らんだお腹に戸惑い、その自分の姿を醜いと思っている。"
+  "She has finally become pregnant with a human child.",
+  "Confused by her swollen belly, she considers her own appearance to be ugly."
   ],
   #配列８個目
   [
   1,
   155,
-  "双子の塔の男たちの手でメス豚として調教され身も心も躾けられた。",
-  "以前よりもさらに貪欲に男を求める淫売として成長している。"
+  "She has been trained and disciplined as a depraved female pig by the men of the Twin Towers.",
+  "She has grown into a more insatiable whore, craving men even more than before."
   ],
   #配列１０個目
   [
   1,
   157,
-  "ボテ腹を晒して積極的に客を取るようになった。",
-  "誰とでも子作りする変態娼婦としてその筋で評判になっている。"
+  "She now proudly exposes her pregnant belly and actively seeks clients.",
+  "She has gained a reputation as a perverted prostitute who will mate with anyone."
   ],
   #配列１１個目
   [
   1,
   158,
-  "すでに娼婦として熟練の域に達している。",
-  "とはいえ基本的にチンポに弱いのでお客さまに翻弄されることもしばしば。"
+  "She has already reached a level of expertise as a prostitute.",
+  "However, she is still fundamentally weak to cocks and often gets manipulated by her clients."
   ],
    #配列１２個目
   [
   1,
   159,
-  "街に来た当初から付き合いのあった酪農家のガマスと愛人関係になった。",
-  "なにか変わったことを考えているようでシルフィーも期待している。"
+  "She entered into a mistress relationship with Gamasu, a dairy farmer she had known since coming to the town.",
+  "It seems like he has something different in mind, and Sylphy is also looking forward to it."
   ],
    #配列１２個目
   [
   1,
   160,
-  "少年たちの秘密基地で3Pの快楽を味わったシルフィーは",
-  "事実上彼らのオンナとして扱われことになったのだった。"
+  "She experienced the pleasure of a threesome in the boys' secret base.",
+  "In essence, she has become their woman, treated as such by them."
   ],
     #配列１３個目
   [
   1,
   166,
-  "ついに自由を取り戻した。だがメス豚となった事実が消えるわけもなく、",
-  "また淫売皇女として娼婦を辞めるつもりもさらさらないのだった。"
+  "She has finally regained her freedom.",
+  "However, the fact that she has become a female pig does not disappear."
   ],
   #★設定項目終わり
   ]
