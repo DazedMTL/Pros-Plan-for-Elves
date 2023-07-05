@@ -8,82 +8,82 @@
 module Vocab
 
   # ショップ画面
-  ShopBuy         = "購入する"
-  ShopSell        = "売却する"
-  ShopCancel      = "やめる"
-  Possession      = "持っている数"
+  ShopBuy         = "Buy"
+  ShopSell        = "Sell"
+  ShopCancel      = "Cancel"
+  Possession      = "Items"
 
   # ステータス画面
-  ExpTotal        = "現在の娼婦経験値"
-  ExpNext         = "次の%sまで"
+  ExpTotal        = "Total EXP"
+  ExpNext         = "Next"
 
   # セーブ／ロード画面
-  SaveMessage     = "どのファイルにセーブしますか？"
-  LoadMessage     = "どのファイルをロードしますか？"
-  File            = "ファイル"
+  SaveMessage     = "Which file would you like to save to?"
+  LoadMessage     = "Which file would you like to load?"
+  File            = "File"
 
   # 複数メンバーの場合の表示
-  PartyName       = "%sたち"
+  PartyName       = "%s"
 
   # 戦闘基本メッセージ
-  Emerge          = "%sにご奉仕開始！"
-  Preemptive      = "%sは先手を取った！"
-  Surprise        = "%sは不意をつかれた！"
-  EscapeStart     = "%sは逃げ出した！"
-  EscapeFailure   = "しかし逃げることはできなかった！"
+  Emerge          = "%s emerged！"
+  Preemptive      = "%s ambushed the enemy！"
+  Surprise        = "%s caught me off guard！"
+  EscapeStart     = "%s ran away!"
+  EscapeFailure   = "Failed to escape！"
 
   # 戦闘終了メッセージ
-  Victory         = "%sは男を満足させた！"
-  Defeat          = "%sはイかされてしまった・・・"
-  ObtainExp       = "%s の娼婦経験値を獲得した"
-  ObtainGold      = "お金を %s\\G 手に入れた"
-  ObtainItem      = "%sを手に入れた。"
-  LevelUp         = "%sは%sが %s になった！"
-  ObtainSkill     = "%sを覚えた！"
+  Victory         = "%s was Victorious！"
+  Defeat          = "%s was defeated..."
+  ObtainExp       = "Obtained prostitute experience points for %s."
+  ObtainGold      = "Obtained %s\\G of money."
+  ObtainItem      = "Obtained %s."
+  LevelUp         = "%s has become %s!"
+  ObtainSkill     = "Learned %s!"
 
-  # アイテム使用
-  UseItem         = "%sは%sを使った！"
+  # Item usage
+  UseItem         = "%s used %s!"
 
-  # クリティカルヒット
-  CriticalToEnemy = "会心の一手！！"
-  CriticalToActor = "手ごたえのある一手！！"
+  # Critical hit
+  CriticalToEnemy = "Critical hit!!"
+  CriticalToActor = "Powerful blow!!"
 
-  # アクター対象の行動結果
-  ActorDamage     = "%sは %s の体力を消耗した！"
-  ActorRecovery   = "%sの%sが %s 回復した！"
-  ActorGain       = "%sの%sが %s 増えた！"
-  ActorLoss       = "%sの%sが %s 減った！"
-  ActorDrain      = "%sは%sを %s 奪われた！"
-  ActorNoDamage   = "%sの防御力が増している。"
-  ActorNoHit      = "ミス！　%sは感じていない！"
+  # Action result on actor
+  ActorDamage     = "%s depleted %s's HP!"
+  ActorRecovery   = "%s's %s recovered by %s!"
+  ActorGain       = "%s's %s increased by %s!"
+  ActorLoss       = "%s's %s decreased by %s!"
+  ActorDrain      = "%s had %s stolen by %s!"
+  ActorNoDamage   = "%s's defense is too high to be damaged."
+  ActorNoHit      = "Miss! %s is unaffected!"
 
-  # 敵キャラ対象の行動結果
-  EnemyDamage     = "%sに %s の体力を消耗させた！"
-  EnemyRecovery   = "%sの%sが %s 回復した！"
-  EnemyGain       = "%sの%sが %s 増えた！"
-  EnemyLoss       = "%sの%sが %s 減った！"
-  EnemyDrain      = "%sの%sを %s 奪った！"
-  EnemyNoDamage   = "%sに快楽を与えられない！"
-  EnemyNoHit      = "ミス！　%sに快楽を与えられない！"
+  # Action result on enemy
+  EnemyDamage     = "%s depleted %s's HP!"
+  EnemyRecovery   = "%s's %s recovered by %s!"
+  EnemyGain       = "%s's %s increased by %s!"
+  EnemyLoss       = "%s's %s decreased by %s!"
+  EnemyDrain      = "%s drained %s's %s!"
+  EnemyNoDamage   = "%s can't be pleasured!"
+  EnemyNoHit      = "Miss! %s can't be pleasured!"
 
-  # 回避／反射
-  Evasion         = "%sは責めをかわした！"
-  MagicEvasion    = "%sは魔法を打ち消した！"
-  MagicReflection = "%sは魔法を跳ね返した！"
-  CounterAttack   = "%sの反撃！"
-  Substitute      = "%sが%sをかばった！"
-
-  # 能力強化／弱体
-  BuffAdd         = "%sの%sが上がった！"
-  DebuffAdd       = "%sの%sが下がった！"
-  BuffRemove      = "%sの%sが元に戻った！"
-
-  # スキル、アイテムの効果がなかった
-  ActionFailure   = "%sには効かなかった！"
-
-  # エラーメッセージ
-  PlayerPosError  = "プレイヤーの初期位置が設定されていません。"
-  EventOverflow   = "コモンイベントの呼び出しが上限を超えました。"
+  # Evasion / Reflection
+  Evasion         = "%s dodged the attack!"
+  MagicEvasion    = "%s cancelled out the magic!"
+  MagicReflection = "%s reflected the magic!"
+  CounterAttack   = "%s counterattacked!"
+  Substitute      = "%s protected %s!"
+  
+  # Ability enhancement / debilitation
+  BuffAdd         = "%s's %s increased!"
+  DebuffAdd       = "%s's %s decreased!"
+  BuffRemove      = "%s's %s returned to normal!"
+  
+  # Skill or item had no effect
+  ActionFailure   = "No effect on %s!"
+  
+  # Error messages
+  PlayerPosError  = "Player's initial position is not set."
+  EventOverflow   = "Common event calls exceeded the limit."
 
   # 基本ステータス
   def self.basic(basic_id)
