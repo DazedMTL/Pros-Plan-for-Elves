@@ -38,7 +38,7 @@ module Vocab
   ObtainExp       = "Obtained prostitute experience points for %s."
   ObtainGold      = "Obtained %s\\G of money."
   ObtainItem      = "Obtained %s."
-  LevelUp         = "%s has become %s!"
+  LevelUp         = "%s has raised their %s!"
   ObtainSkill     = "Learned %s!"
 
   # Item usage

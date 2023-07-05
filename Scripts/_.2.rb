@@ -40,7 +40,7 @@ module OMC
   
   
   C[13] = [21, "Log", 21, true]
-  C[14] = [19, "Sub-Event", 3, true]
+ \C[14] = [19, "Sub-Event", 3, true]
       
   
   #メニューへの反映には「簡単コマンドカスタム」スクリプトで設定します
