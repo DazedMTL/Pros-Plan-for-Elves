@@ -41,11 +41,11 @@ class Window_MenuCommand < Window_Command
   def add_load_command
     @list.each_with_index{|data, index|
       if data[:symbol] == :save
-        add_command_with_index("ロード", :load, index.next, DataManager.save_file_exists?)
+        add_command_with_index("Load", :load, index.next, DataManager.save_file_exists?)
         return
       end
     }
-    add_command("ロード", :load, DataManager.save_file_exists?)
+    add_command("Load", :load, DataManager.save_file_exists?)
   end
 end
 
