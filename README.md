@@ -2,7 +2,7 @@
 1. Click Code
 2. Click Download ZIP
 3. Extract to game folder.
-4. Extract Data.7z. Replace All.
+4. **Extract Data.7z. Replace All.**
 
 # How To Contribute
 TLDR 3 steps.
